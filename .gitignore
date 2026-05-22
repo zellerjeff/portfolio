@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Backup / draft HTML files
+portfolio-standalone.html
+"index (Jeff Zeller's conflicted copy 2026-05-20).html"
+index copy may 14.html
+
+# Working docs (not needed for deployment)
+Jeff_Zeller_Portfolio_PRD.md
+Jeff_Zeller_Resume_2026_v2.pdf
+Projects per Role.docx
+
+# Scripts
+download_press_logos.py
+embed_images.py
+serve.py
+
+# Claude
+.claude/
