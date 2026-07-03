@@ -8,875 +8,36 @@
   <meta property="og:title" content="Jeff Zeller - Partnerships & Marketing Executive">
   <meta property="og:description" content="Building the deals that put brands at the center of culture. Visa · Crypto.com · ESPN · Sony Music · Apple.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zellerjeff.github.io/portfolio/">
+  <meta property="og:image" content="https://zellerjeff.github.io/portfolio/Portrait%20Photos/_Old%20Money.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1a3560">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a3560'/%3E%3Ctext x='32' y='43' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='28' font-weight='800' fill='%23ffffff' text-anchor='middle'%3EJZ%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    /* ─── TOKENS ─────────────────────────────────────────────── */
-    :root {
-      --bg:         #f5f5f7;
-      --white:      #ffffff;
-      --text:       #1d1d1f;
-      --text-dim:   #6e6e73;
-      --text-faint: #a1a1a6;
-      --accent:     #1a3560;
-      --border:     rgba(0,0,0,0.09);
-      --shadow:     0 2px 16px rgba(0,0,0,0.07);
-      --shadow-lg:  0 12px 48px rgba(0,0,0,0.10);
-      --radius:     16px;
-      --radius-sm:  10px;
-      --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      --max-w: 1200px;
-      --pad: clamp(1.25rem, 5vw, 5rem);
-    }
-
-    /* ─── RESET ──────────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.6; overflow-x: hidden; }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; }
-
-    /* ─── NAV ────────────────────────────────────────────────── */
-    .nav {
-      position: fixed; top: 0.875rem;
-      left: 50%; transform: translateX(-50%);
-      z-index: 100;
-      width: calc(100% - 3rem); max-width: 1160px;
-      background: rgba(255,255,255,0.97);
-      backdrop-filter: saturate(180%) blur(20px);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      box-shadow: 0 4px 28px rgba(0,0,0,0.09);
-    }
-    .nav-inner {
-      padding: 0 1.5rem;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 56px;
-    }
-    .nav-logo { font-size: 1rem; font-weight: 700; letter-spacing: -0.03em; color: var(--text); }
-    .nav-links { display: flex; gap: 2rem; }
-    .nav-links a { font-size: 0.82rem; font-weight: 500; color: var(--text-dim); transition: color 0.15s; }
-    .nav-links a:hover { color: var(--text); }
-    .nav-links a.active { color: var(--accent); }
-    .nav-resume {
-      font-size: 0.78rem; font-weight: 700;
-      background: var(--accent); color: #fff;
-      padding: 0.48rem 1.2rem; border-radius: 980px;
-      transition: opacity 0.15s, transform 0.15s;
-    }
-    .nav-resume:hover { opacity: 0.88; transform: translateY(-1px); }
-    @media (max-width: 640px) { .nav-links { display: none; } }
-    @media (max-width: 480px) { .nav { width: calc(100% - 1.5rem); border-radius: 12px; } }
-
-    /* ─── HERO ───────────────────────────────────────────────── */
-    #hero {
-      background: var(--white);
-      padding-top: 84px;
-    }
-    .hero-wrap {
-      max-width: var(--max-w); margin: 0 auto;
-      padding: clamp(2.5rem,5vw,4rem) var(--pad) clamp(2rem,4vw,3rem);
-    }
-    .hero-grid {
-      display: grid; grid-template-columns: 1fr 420px;
-      gap: 3rem; align-items: flex-start;
-    }
-    @media (max-width: 900px) {
-      .hero-grid { grid-template-columns: 1fr 280px; gap: 2rem; }
-    }
-    @media (max-width: 700px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      .hero-photo-wrap { width: 100%; }
-    }
-    .hero-eyebrow {
-      font-size: 0.75rem; font-weight: 600;
-      letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--text-faint); margin-bottom: 1rem;
-    }
-    .hero-name {
-      font-size: clamp(3.5rem, 8vw, 7rem);
-      font-weight: 800; letter-spacing: -0.04em;
-      line-height: 0.93; color: var(--text);
-    }
-    .hero-name span { color: var(--accent); }
-    .hero-headline {
-      font-size: clamp(0.95rem, 1.8vw, 1.15rem);
-      font-weight: 400; color: var(--text-dim);
-      line-height: 1.55; max-width: 440px; margin-top: 1.25rem;
-    }
-    .hero-brands {
-      margin-top: 1rem; font-size: 0.78rem; font-weight: 500;
-      letter-spacing: 0.06em; color: var(--text-faint);
-    }
-    .hero-photo-wrap img {
-      width: 100%; aspect-ratio: 3/4;
-      object-fit: cover; object-position: center top;
-      border-radius: 20px; box-shadow: var(--shadow-lg);
-    }
-
-    /* ─── HERO LOGOS ─────────────────────────────────────────── */
-    .hero-logos {
-      display: grid; grid-template-columns: repeat(5, 1fr);
-      margin-top: 2rem;
-    }
-    .hero-logo-item {
-      display: flex; align-items: center; justify-content: center;
-      height: 60px; border-right: 1px solid var(--border);
-    }
-    .hero-logo-item:last-child { border-right: none; }
-    .hero-logo-item img {
-      max-height: 30px; max-width: 80%; width: auto;
-      opacity: 0.85;
-      object-fit: contain;
-    }
-    @media (max-width: 540px) { .hero-logos { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; } }
-
-    /* ─── HERO STATS / SKILLS ────────────────────────────────── */
-    .hero-stats {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 1rem; margin-top: 2rem;
-    }
-    @media (max-width: 768px) { .hero-stats { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 420px) { .hero-stats { grid-template-columns: 1fr 1fr; } }
-    .stat-item {
-      background: var(--bg); border-radius: var(--radius-sm);
-      padding: 1.1rem 1.25rem; box-shadow: var(--shadow);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .stat-item:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-    .stat-number {
-      font-size: 2rem; font-weight: 800;
-      letter-spacing: -0.04em; color: var(--text); line-height: 1;
-    }
-    .stat-label { font-size: 0.74rem; color: var(--text-dim); margin-top: 0.25rem; line-height: 1.4; }
-    .skills { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 1.25rem; justify-content: center; }
-    .skill-tag {
-      font-size: 0.75rem; font-weight: 500;
-      background: rgba(0,0,0,0.05); color: var(--text-dim);
-      padding: 0.35rem 0.85rem; border-radius: 980px;
-      transition: background 0.15s, color 0.15s;
-    }
-    .skill-tag:hover { background: rgba(0,0,0,0.1); color: var(--text); }
-
-    /* ─── TICKER ─────────────────────────────────────────────── */
-    .ticker-bar {
-      background: var(--accent); border-top: none; border-bottom: none;
-      overflow: hidden; padding: 0.7rem 0;
-    }
-    .ticker-track { display: flex; white-space: nowrap; animation: ticker 32s linear infinite; }
-    .ticker-track span {
-      font-size: 0.75rem; font-weight: 500;
-      letter-spacing: 0.08em; color: rgba(255,255,255,0.75);
-    }
-    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-
-    /* ─── LAYOUT SHELL ───────────────────────────────────────── */
-    .page-section { padding: clamp(2rem, 4vw, 3.5rem) var(--pad); }
-    .page-section-alt { background: var(--bg); }
-    .page-section-white { background: var(--white); }
-    .inner { max-width: var(--max-w); margin: 0 auto; }
-    .section-label {
-      font-size: 0.90rem; font-weight: 600;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--accent); margin-bottom: 0.75rem;
-    }
-    .section-heading {
-      font-size: clamp(2.4rem, 5vw, 4.5rem);
-      font-weight: 800; letter-spacing: -0.035em;
-      line-height: 1.0; color: var(--text);
-    }
-
-    /* ─── EXPERIENCE HEADER ──────────────────────────────────── */
-    .exp-intro { margin-bottom: 3.5rem; }
-    .exp-co-label {
-      font-size: 0.85rem; font-weight: 600;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--text-faint); margin-bottom: 0.1rem;
-    }
-    .exp-co-location {
-      font-size: 0.78rem; font-weight: 500;
-      letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--text-faint); opacity: 0.65; margin-bottom: 0.35rem;
-    }
-    .edu-location {
-      font-size: 0.78rem; font-weight: 500;
-      letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--text-faint); opacity: 0.65; margin-top: 0.1rem;
-    }
-    .exp-company {
-      font-size: clamp(2rem, 5vw, 4.5rem);
-      font-weight: 800; letter-spacing: -0.04em;
-      line-height: 0.92; color: var(--text);
-    }
-    .exp-role { font-size: 1.2rem; font-weight: 700; color: var(--text); margin-top: 0.65rem; line-height: 1.4; }
-    .exp-tagline { font-size: 0.88rem; font-weight: 500; color: var(--accent); margin-top: 0.35rem; }
-
-    /* ─── CARDS ──────────────────────────────────────────────── */
-    .cards-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
-    }
-    .cards-grid-2 { grid-template-columns: repeat(2, 1fr); }
-    @media (max-width: 900px) { .cards-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 540px) { .cards-grid, .cards-grid-2 { grid-template-columns: 1fr; } }
-
-    .card {
-      background: var(--white); border-radius: var(--radius);
-      overflow: hidden; box-shadow: var(--shadow);
-      transition: transform 0.3s cubic-bezier(.25,.46,.45,.94),
-                  box-shadow 0.3s cubic-bezier(.25,.46,.45,.94);
-    }
-    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .card-hero { position: relative; min-height: 360px; background: #111; }
-    .card-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
-    .card-hero-body {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      padding: 1.25rem 1.25rem 1.1rem;
-      background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
-    }
-    .card-hero-body .card-tag { color: rgba(255,255,255,0.7); }
-    .card-hero-body .card-title { color: #fff; }
-    .card-hero-body .card-desc { color: rgba(255,255,255,0.75); }
-    .card-img-wrap { aspect-ratio: 1/1; overflow: hidden; position: relative; max-height: 400px; }
-    .poster-grid .card-img-wrap { aspect-ratio: 3/4; max-height: none; }
-    .card-img-wrap img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 0.5s cubic-bezier(.25,.46,.45,.94);
-    }
-    .card:hover .card-img-wrap img { transform: scale(1.05); }
-    .card-placeholder {
-      width: 100%; height: 100%;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      padding: 1.5rem; text-align: center;
-    }
-    .card-placeholder-title {
-      font-size: 0.82rem; font-weight: 700;
-      letter-spacing: 0.04em; color: rgba(255,255,255,0.9); line-height: 1.3;
-    }
-    .card-placeholder-note { font-size: 0.6rem; color: rgba(255,255,255,0.35); margin-top: 0.6rem; line-height: 1.4; }
-    .card-body { padding: 1.1rem 1.25rem 1.35rem; }
-    .card-tag {
-      font-size: 0.90rem; font-weight: 700;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--accent); margin-bottom: 0.35rem;
-    }
-    .card-title { font-size: 0.92rem; font-weight: 700; color: var(--text); line-height: 1.3; }
-    .card-desc { font-size: 0.8rem; color: var(--text-dim); line-height: 1.65; margin-top: 0.35rem; }
-
-    /* ─── ACHIEVEMENTS ───────────────────────────────────────── */
-    .achievements {
-      margin-top: 2.5rem; padding: 1.75rem 2rem;
-      background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .achievements:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-    .achievements h4 {
-      font-size: 0.90rem; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;
-    }
-    .achievements ul { display: flex; flex-direction: column; gap: 0.65rem; }
-    .achievements li {
-      display: flex; gap: 0.75rem; align-items: flex-start;
-      font-size: 0.88rem; color: var(--text-dim); line-height: 1.55;
-    }
-    .achievements li::before { content: '•'; color: var(--accent); flex-shrink: 0; font-size: 0.75rem; margin-top: 0.1em; }
-
-    /* ─── PROOF TILES ────────────────────────────────────────── */
-    .proof-row {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 0.75rem; margin-top: 1.5rem;
-    }
-    @media (max-width: 640px) { .proof-row { grid-template-columns: 1fr 1fr; } }
-    .proof-tile {
-      background: var(--white); border-radius: var(--radius-sm);
-      padding: 1.25rem; box-shadow: var(--shadow);
-      border-top: 3px solid var(--accent);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .proof-tile:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-    .proof-number { font-size: 2rem; font-weight: 800; letter-spacing: -0.04em; color: var(--text); line-height: 1; }
-    .proof-label { font-size: 0.74rem; color: var(--text-dim); margin-top: 0.3rem; line-height: 1.4; }
-
-    /* ─── TLD HERO ───────────────────────────────────────────── */
-    .tld-hero {
-      width: 100%; aspect-ratio: 21/9; object-fit: cover;
-      border-radius: var(--radius); box-shadow: var(--shadow-lg);
-      margin-bottom: 1.25rem;
-    }
-
-    /* ─── EDUCATION ──────────────────────────────────────────── */
-    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 3rem; }
-    @media (max-width: 768px) { .edu-grid { grid-template-columns: 1fr; } }
-    .edu-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); position: relative; }
-    .edu-card-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
-    .edu-card-body { padding: 1.75rem; }
-    .edu-school { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.04em; color: var(--text); line-height: 1; }
-    .edu-degree { font-size: 0.95rem; font-weight: 600; color: var(--accent); margin-top: 0.4rem; }
-    .edu-years { font-size: 0.75rem; color: var(--text-faint); margin-top: 0.2rem; }
-    .edu-bullets { margin-top: 1.1rem; display: flex; flex-direction: column; gap: 0.45rem; }
-    .edu-bullets li {
-      font-size: 0.83rem; color: var(--text-dim); line-height: 1.5;
-      display: flex; gap: 0.55rem; align-items: flex-start;
-    }
-    .edu-bullets li::before { content: '·'; color: var(--text-faint); flex-shrink: 0; }
-
-    /* ─── SOUND SOCIETY ──────────────────────────────────────── */
-    .ss-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    @media (max-width: 768px) { .ss-cards { grid-template-columns: 1fr; } }
-    .ss-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.2s, box-shadow 0.2s; }
-    .ss-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-    .ss-card-body { padding: 1rem 1.1rem 1.15rem; }
-    .ss-card-title { font-size: 0.9rem; font-weight: 700; color: var(--text); }
-    .ss-card-desc { font-size: 0.78rem; color: var(--text-dim); margin-top: 0.25rem; line-height: 1.5; }
-
-    /* ─── CONTACT ────────────────────────────────────────────── */
-    .contact-wrap { text-align: center; max-width: 900px; margin: 0 auto; }
-    .contact-links { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
-    .btn-primary {
-      display: inline-flex; align-items: center;
-      background: var(--text); color: #fff;
-      font-size: 0.88rem; font-weight: 600;
-      padding: 0.75rem 1.75rem; border-radius: 980px;
-      transition: opacity 0.15s, transform 0.15s;
-    }
-    .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
-    .btn-secondary {
-      display: inline-flex; align-items: center;
-      background: rgba(0,0,0,0.06); color: var(--text);
-      font-size: 0.88rem; font-weight: 600;
-      padding: 0.75rem 1.75rem; border-radius: 980px;
-      transition: background 0.15s, transform 0.15s;
-    }
-    .btn-secondary:hover { background: rgba(0,0,0,0.1); transform: translateY(-1px); }
-
-    /* ─── FUN FACTS (cards) ──────────────────────────────────── */
-    .fun-facts { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
-    .fun-facts h4 {
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--text-faint); margin-bottom: 1.25rem;
-    }
-    .fun-facts-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
-    }
-    @media (max-width: 540px) { .fun-facts-grid { grid-template-columns: 1fr; } }
-
-    /* ─── FOOTER ─────────────────────────────────────────────── */
-    footer {
-      background: var(--white); border-top: 1px solid var(--border);
-      padding: 1.5rem var(--pad);
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .footer-name { font-size: 0.88rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-dim); }
-    .footer-copy { font-size: 0.75rem; color: var(--text-faint); }
-
-    /* ─── SECTION SEPARATORS ─────────────────────────────────── */
-    .sep { height: 1px; background: var(--border); max-width: var(--max-w); margin: 0 auto; }
-
-    /* ─── SCROLL ANIMATIONS ──────────────────────────────────── */
-    .fade-up {
-      opacity: 0; transform: translateY(28px);
-      transition: opacity 0.75s cubic-bezier(.25,.46,.45,.94),
-                  transform 0.75s cubic-bezier(.25,.46,.45,.94);
-    }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-    /* ─── VIDEO / EMBED WRAPPERS ─────────────────────────────── */
-    .card-video-wrap { aspect-ratio: 1/1; overflow: hidden; background: #000; max-height: 400px; }
-    .card-video-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
-    .spotify-embed { margin-top: 0.75rem; }
-    .spotify-embed-label {
-      font-size: 0.90rem; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem;
-    }
-
-    /* ─── INLINE HEADLINE UTILITY ────────────────────────────── */
-    .sub-heading {
-      font-size: clamp(1.6rem, 3.5vw, 2.8rem);
-      font-weight: 800; letter-spacing: -0.03em;
-      color: var(--text); margin-bottom: 0.5rem; line-height: 1.05;
-    }
-    .sub-body { font-size: 0.92rem; color: var(--text-dim); max-width: 640px; line-height: 1.7; margin-bottom: 1.25rem; }
-
-    /* ─── ESPN SUB-CATEGORY ──────────────────────────────────── */
-    /* ─── SHOTS OF HYPE GRID ─────────────────────────────────── */
-    .soh-grid {
-      display: grid; grid-template-columns: repeat(8, 1fr);
-      gap: 0.5rem; margin-bottom: 1.5rem;
-    }
-    .soh-cell {
-      position: relative; aspect-ratio: 1/1; overflow: hidden;
-      border-radius: var(--radius); background: #1a3560;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .soh-cell img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-      transition: transform 0.5s cubic-bezier(.25,.46,.45,.94);
-    }
-    .soh-cell:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
-    .soh-cell:hover img { transform: scale(1.05); }
-    .soh-name {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      padding: 0.35rem 0.5rem;
-      background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
-      color: #fff; font-size: 0.65rem; font-weight: 600;
-      letter-spacing: 0.02em; line-height: 1.2;
-    }
-
-    /* ─── PRESS GRID ─────────────────────────────────────────── */
-    .press-list { margin-top: 1.75rem; }
-    .press-list-heading {
-      font-size: 0.90rem; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--accent);
-      padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);
-      margin-bottom: 1rem;
-    }
-    .press-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
-    @media (max-width: 900px) { .press-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 500px) { .press-grid { grid-template-columns: 1fr; } }
-    a.press-card {
-      display: flex; flex-direction: column;
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: var(--radius-sm); padding: 1rem 2rem 1.1rem 1rem;
-      text-decoration: none; position: relative;
-      transition: transform 0.15s, box-shadow 0.15s;
-    }
-    a.press-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-    a.press-card:hover .press-headline { color: var(--accent); }
-    a.press-card:hover .press-arrow { transform: translate(2px, -2px); color: var(--accent); }
-    .press-pub {
-      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.09em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
-    }
-    .press-pub-logo {
-      height: 28px; width: auto; max-width: 80%; object-fit: contain;
-      object-position: left center; display: block; margin-bottom: 0.6rem;
-    }
-    .press-headline {
-      font-size: 1rem; font-weight: 700; color: var(--text);
-      line-height: 1.35; flex: 1;
-      display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
-      overflow: hidden; transition: color 0.15s;
-    }
-    .press-arrow {
-      font-size: 0.8rem; color: var(--text-faint);
-      position: absolute; top: 0.75rem; right: 0.75rem;
-      transition: transform 0.15s, color 0.15s;
-    }
-
-    .espn-sub { margin-top: 3rem; }
-    .espn-sub-label {
-      font-size: 0.90rem; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--text-faint);
-      margin-bottom: 1rem; padding-bottom: 0.6rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    /* ─── CAROUSEL ───────────────────────────────────────────── */
-    .carousel { position: relative; }
-    .carousel-track-wrap {
-      position: relative; overflow: hidden;
-      border-radius: var(--radius);
-    }
-    .carousel-track-wrap.ar-1-1   { aspect-ratio: 1/1; }
-    .carousel-track-wrap.ar-3-1    { aspect-ratio: 3/1; }
-    .carousel-track-wrap.ar-3-2   { aspect-ratio: 3/2; }
-    .carousel-track-wrap.ar-9-16  { aspect-ratio: 9/16; }
-    .carousel-track-wrap.ar-16-9  { aspect-ratio: 16/9; }
-    .carousel-track-wrap.ar-27-16 { aspect-ratio: 27/16; }
-    .carousel-track-wrap.ar-54-16 { aspect-ratio: 54/16; }
-    [data-per-page="3"] .carousel-slide { flex: 0 0 calc(100% / 3); }
-    [data-per-page="6"] .carousel-slide { flex: 0 0 calc(100% / 6); }
-    .carousel-track {
-      display: flex; height: 100%;
-      transition: transform 0.45s cubic-bezier(.25,.46,.45,.94);
-      will-change: transform;
-    }
-    .carousel-slide {
-      flex: 0 0 100%; min-width: 0; height: 100%; overflow: hidden;
-    }
-    .carousel-slide img {
-      width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;
-    }
-    .espn-sub-merch .carousel-slide img { object-position: center; }
-    .carousel-slide .card {
-      height: 100%; border-radius: 0; box-shadow: none;
-    }
-    .carousel-btn {
-      position: absolute; top: 50%; transform: translateY(-50%);
-      background: rgba(255,255,255,0.88); border: none; cursor: pointer;
-      width: 15px; height: 15px; border-radius: 50%;
-      font-size: 0.525rem; line-height: 1; display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.18); z-index: 10;
-      transition: background 0.15s, transform 0.15s;
-      backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
-    }
-    .carousel-btn:hover { background: #fff; transform: translateY(-50%) scale(1.15); }
-    .carousel-btn.prev { left: 6px; }
-    .carousel-btn.next { right: 6px; }
-    .carousel-dots {
-      display: flex; gap: 6px; justify-content: center;
-      margin-top: 0.75rem; flex-wrap: wrap;
-    }
-    .carousel-dot {
-      width: 6px; height: 6px; border-radius: 50%;
-      background: var(--border); border: none; cursor: pointer; padding: 0;
-      transition: background 0.2s, transform 0.2s;
-    }
-    .carousel-dot.active { background: var(--accent); transform: scale(1.4); }
-
-    /* portrait carousel centering */
-    .portrait-carousel-wrap { max-width: 340px; margin: 1.5rem auto 0; }
-
-    /* ─── TV SHOW COVER ART ROW ─────────────────────────────── */
-    .tv-covers-row {
-      display: grid; grid-template-columns: repeat(6, 1fr);
-      gap: 0.75rem; margin-top: 1.25rem;
-    }
-    .tv-cover-cell {
-      aspect-ratio: 1/1; border-radius: var(--radius-sm);
-      overflow: hidden; background: #1a1a2e; position: relative;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .tv-cover-cell img {
-      width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;
-      transition: transform 0.5s cubic-bezier(.25,.46,.45,.94);
-    }
-    .tv-cover-cell:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
-    .tv-cover-cell:hover img { transform: scale(1.05); }
-    .tv-cover-label {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      padding: 0.3rem 0.4rem;
-      background: linear-gradient(to top, rgba(0,0,0,0.78), transparent);
-      color: #fff; font-size: 0.6rem; font-weight: 600; line-height: 1.2;
-    }
-
-    /* ─── CONTACT CTA WITH BACKGROUND IMAGE ─────────────────── */
-    .cta-image-wrap {
-      position: relative; margin-top: 2.5rem;
-      border-radius: var(--radius); overflow: hidden;
-      padding: 3.5rem 2rem;
-      background: var(--bg);
-    }
-    .cta-bg-img {
-      position: absolute; inset: 0;
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: center top;
-      opacity: 0.25; pointer-events: none;
-    }
-    .cta-content { position: relative; z-index: 1; }
-
-    /* ─── RESPONSIVE: HIDE CARD DESCRIPTIONS AT NARROW WIDTHS ── */
-    #crypto .popular-style .card-tag { order: 0; margin-top: 0; margin-bottom: 0.35rem; }
-
-    @media (max-width: 1000px) {
-      #crypto .card-desc,
-      #crypto .card-tag,
-      .poster-grid .card-desc { display: none; }
-    }
-    @media (max-width: 750px) {
-      .adidas-media-grid { grid-template-columns: 1fr !important; }
-      .adidas-photo-grid { grid-template-columns: repeat(4, 1fr) !important; }
-      .espn-intro-grid { grid-template-columns: 1fr !important; }
-      .espn-intro-grid img { width: 100% !important; }
-      .hype-hits-article-grid { grid-template-columns: repeat(2, 1fr) !important; }
-    }
-    @media (max-width: 500px) {
-      .hype-hits-article-grid { grid-template-columns: 1fr !important; }
-    }
-    @media (max-width: 1100px) {
-      .content-marketing-grid { grid-template-columns: repeat(4, 1fr) !important; }
-    }
-    @media (max-width: 800px) {
-      .content-marketing-grid { grid-template-columns: repeat(3, 1fr) !important; }
-    }
-    @media (max-width: 550px) {
-      .content-marketing-grid { grid-template-columns: repeat(2, 1fr) !important; }
-    }
-    @media (max-width: 500px) {
-      #board .card-desc { display: none; }
-    }
-
-    /* ─── SOH HEADSHOTS: NAMES BELOW IMAGE AT NARROW WIDTHS ──── */
-    @media (max-width: 500px) {
-      .soh-cell { overflow: visible; }
-      .soh-cell img { border-radius: var(--radius-sm); }
-      .soh-name {
-        position: static;
-        background: none;
-        color: var(--text-dim);
-        font-size: 0.55rem;
-        padding: 0.2rem 0.1rem 0;
-        text-align: center;
-      }
-    }
-
-    /* ─── LIGHTBOX ───────────────────────────────────────────── */
-    .lightbox {
-      display: none; position: fixed; inset: 0; z-index: 999;
-      background: rgba(0,0,0,0.78); backdrop-filter: blur(8px);
-      align-items: center; justify-content: center; cursor: zoom-out;
-    }
-    .lightbox.open { display: flex; }
-    .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 32px 80px rgba(0,0,0,0.4); }
-
-    /* ─── BENTO GRID ─────────────────────────────────────────── */
-    .bento-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 255px 255px;
-      gap: 1rem;
-    }
-    .bento-featured { grid-row: span 2; }
-    .bento-grid .card-hero { min-height: unset; height: 100%; }
-    @media (max-width: 900px) {
-      .bento-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-      }
-      .bento-featured { grid-row: span 1; grid-column: span 2; }
-      .bento-grid .card-hero { min-height: 300px; height: auto; }
-    }
-    @media (max-width: 540px) {
-      .bento-grid { grid-template-columns: 1fr; }
-      .bento-featured { grid-column: span 1; }
-    }
-
-    /* ─── FLOATING CATEGORY PILL ON CARDS ───────────────────── */
-    .cat-pill {
-      position: absolute;
-      top: 1rem; left: 1rem;
-      z-index: 2;
-      display: inline-flex;
-      align-items: center;
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: rgba(255,255,255,0.18);
-      color: rgba(255,255,255,0.95);
-      padding: 0.28rem 0.7rem;
-      border-radius: 980px;
-      border: 1px solid rgba(255,255,255,0.3);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-    .cat-pill-navy {
-      background: var(--accent);
-      color: #fff;
-      border-color: transparent;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-    }
-
-    /* ─── EDITORIAL EXP META ROW (year badge + location) ─────── */
-    .exp-meta-row {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 0.65rem;
-    }
-    .exp-year-badge {
-      display: inline-flex;
-      align-items: center;
-      font-size: 0.67rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--white);
-      background: var(--accent);
-      padding: 0.25rem 0.75rem;
-      border-radius: 980px;
-    }
-    .exp-loc {
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--text-faint);
-    }
-
-    /* ─── EDITORIAL SECTION HEADER (heading + divider + link) ── */
-    .section-header-editorial {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 1.5rem;
-      margin-bottom: 1.75rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 2px solid var(--text);
-    }
-    .section-header-editorial .section-label { margin-bottom: 0; }
-    .section-header-link {
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: var(--accent);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      flex-shrink: 0;
-      transition: opacity 0.15s;
-    }
-    .section-header-link:hover { opacity: 0.65; }
-
-    /* ─── BENTO FEATURED CARD - RICHER GRADIENT ──────────────── */
-    .bento-featured .card-hero-body {
-      background: linear-gradient(
-        to top,
-        rgba(0,0,0,0.95) 0%,
-        rgba(0,0,0,0.65) 45%,
-        rgba(0,0,0,0.15) 72%,
-        transparent 100%
-      );
-      padding: 2rem 1.5rem 1.5rem;
-    }
-    .bento-featured .card-hero-body .card-title {
-      font-size: 1.2rem;
-      line-height: 1.2;
-    }
-
-    /* ─── STAT ITEMS - EDITORIAL TOP BORDER ─────────────────── */
-    .stat-item { border-top: 3px solid var(--accent); }
-
-    /* ─── PROOF TILES - ACCENT VARIANT ──────────────────────── */
-    .proof-tile-accent {
-      background: var(--accent);
-      border-top-color: transparent;
-    }
-    .proof-tile-accent .proof-number { color: #fff; }
-    .proof-tile-accent .proof-label { color: rgba(255,255,255,0.72); }
-
-    /* ─── ACHIEVEMENTS - LEFT ACCENT RULE ───────────────────── */
-    .achievements { border-left: 4px solid var(--accent); }
-
-    /* ─── CARD HOVER - TRAVEL LIFT ───────────────────────────── */
-    .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-
-    /* ─── SUB SECTION LABEL ENHANCED ────────────────────────── */
-    .espn-sub-label {
-      border-bottom-width: 2px;
-      border-bottom-color: var(--text);
-    }
-
-    /* ─── METRIC BADGE (top-right of hero cards, like ★ 4.9) ── */
-    .metric-badge {
-      position: absolute;
-      top: 1rem; right: 1rem;
-      z-index: 2;
-      display: inline-flex; align-items: center; gap: 0.3rem;
-      background: rgba(255,255,255,0.97);
-      color: var(--text);
-      font-size: 0.65rem; font-weight: 800;
-      letter-spacing: 0.03em;
-      padding: 0.3rem 0.7rem;
-      border-radius: 980px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-    }
-    .metric-badge-accent { color: var(--accent); }
-
-    /* ─── SECTION HEADING ACCENT WORD ───────────────────────── */
-    .heading-accent { color: var(--accent); }
-
-    /* ─── EXPLORE SECTION HEADER (label + heading + view link) ─ */
-    .explore-header {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 1.75rem;
-    }
-    .explore-header-left {}
-    .explore-eyebrow {
-      font-size: 0.90rem; font-weight: 700;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--accent); margin-bottom: 0.35rem;
-    }
-    .explore-heading {
-      font-size: clamp(1.75rem, 3.5vw, 2.6rem);
-      font-weight: 800; letter-spacing: -0.035em;
-      line-height: 1.05; color: var(--text);
-    }
-    .view-all-btn {
-      flex-shrink: 0;
-      display: inline-flex; align-items: center; gap: 0.35rem;
-      font-size: 0.75rem; font-weight: 600;
-      color: var(--text); border: 1.5px solid var(--border);
-      padding: 0.55rem 1.1rem; border-radius: 980px;
-      white-space: nowrap;
-      transition: border-color 0.15s, color 0.15s, transform 0.15s;
-    }
-    .view-all-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
-
-    /* ─── CTA GRADIENT SECTION ───────────────────────────────── */
-    .cta-gradient-section {
-      background: linear-gradient(135deg, #dce8f5 0%, #ede5f5 50%, #dce8f5 100%);
-    }
-    .cta-gradient-section .section-heading { font-size: clamp(2.2rem, 5vw, 3.8rem); }
-
-    /* ─── POPULAR DESTINATIONS CARD STYLE ─────────────────────── */
-    .popular-style .card-img-wrap { aspect-ratio: 4 / 3; max-height: none; }
-    .popular-style .card-video-wrap { aspect-ratio: 4 / 3; max-height: none; }
-    .popular-style.poster-grid .card-img-wrap,
-    .popular-style .poster-grid .card-img-wrap { aspect-ratio: 2 / 3; }
-    .popular-style .card-body { padding: 0.9rem 1rem 1rem; display: flex; flex-direction: column; }
-    .popular-style .card-tag {
-      order: 3; display: inline-flex; align-self: flex-start;
-      font-size: 0.59rem; font-weight: 700; letter-spacing: 0.07em;
-      color: var(--accent); background: rgba(26,53,96,0.09);
-      padding: 0.22rem 0.6rem; border-radius: 980px;
-      margin-top: 0.55rem; margin-bottom: 0;
-    }
-    .popular-style .card-title { order: 1; font-size: 0.97rem; font-weight: 800; line-height: 1.25; }
-    .popular-style .card-desc { order: 2; font-size: 0.78rem; margin-top: 0.25rem; }
-    .content-marketing-grid .card { height: 100%; }
-    .content-marketing-grid .card-body a { order: 3; margin-top: auto; padding-top: 0.5rem; }
-    .last-dance-partners .card-body a { order: 3; margin-top: auto; padding-top: 0.5rem; }
-
-    /* ─── POPULAR STYLE - SS-CARDS (Sound Society / Tennis) ───── */
-    .popular-ss .ss-card-body { padding: 0.9rem 1rem 1rem; }
-    .popular-ss .ss-card-title { font-size: 0.97rem; font-weight: 800; line-height: 1.25; color: var(--text); }
-    .popular-ss .ss-card-desc { font-size: 0.78rem; color: var(--text-dim); margin-top: 0.3rem; }
-
-    /* ─── POPULAR STYLE - EDU-CARDS (Harvard / Stanford) ───────── */
-    .popular-edu .edu-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .popular-edu .edu-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .popular-edu .edu-school { font-size: 1.75rem; }
-    .takeover-grid .card-img-wrap { aspect-ratio: 1 / 1; }
-    .brand-strategy-grid .card-img-wrap { aspect-ratio: 1 / 1; }
-    .board-grid .card-img-wrap { aspect-ratio: 1 / 1; }
-    .fun-facts-grid .card-img-wrap { aspect-ratio: 1 / 1; }
-    .last-dance-partners .card-img-wrap { aspect-ratio: 1 / 1; }
-    .hover-lift { transition: transform 0.2s, box-shadow 0.2s; }
-    .hover-lift:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18) !important; }
-    .photo-placeholder-grid > div { transition: transform 0.2s, box-shadow 0.2s; }
-    .photo-placeholder-grid > div:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-    .last-dance-video { transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; }
-    .last-dance-video:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
-    .last-dance-video video { cursor: pointer; }
-    .adidas-video-wrap { transition: transform 0.2s, box-shadow 0.2s; }
-    .adidas-video-wrap:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
-    .adidas-video-wrap video, .card-video-wrap video { cursor: pointer; }
-    .adidas-photo-item { transition: transform 0.2s, box-shadow 0.2s; }
-    .adidas-photo-item:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- ── NAV ─────────────────────────────────────────────────── -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <span></span>
-    <ul class="nav-links">
+    <a href="#hero" class="nav-logo">Jeff Zeller</a>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#hero">Overview</a></li>
       <li><a href="#visa">Work</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#board">Board &amp; Advisory</a></li>
-      <li><a href="#contact">Fun Facts</a></li>
+      <li><a href="#fun-facts">Fun Facts</a></li>
       <li><a href="#lets-talk">Contact</a></li>
     </ul>
-    <a href="Jeff_Zeller_Resume_2026_v2.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+    <div class="nav-right">
+      <a href="Jeff_Zeller_Resume_2026_v2.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -890,16 +51,16 @@
         <p class="hero-headline">Business and creative executive building the deals that put brands at the center of culture.</p>
       </div>
       <div class="hero-photo-wrap fade-up" style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
-        <img src="Portrait Photos/_Glamour.png" alt="Jeff Zeller" loading="eager" class="hover-lift" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center top; border-radius:20px; box-shadow:var(--shadow-lg);">
-        <img src="Portrait Photos/_Old Money.png" alt="Jeff Zeller" loading="eager" class="hover-lift" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center top; border-radius:20px; box-shadow:var(--shadow-lg);">
+        <img src="Portrait Photos/_Glamour.webp" alt="Jeff Zeller" loading="eager" fetchpriority="high" class="hover-lift" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center top; border-radius:20px; box-shadow:var(--shadow-lg);">
+        <img src="Portrait Photos/_Old Money.webp" alt="Jeff Zeller" loading="eager" class="hover-lift" style="width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center top; border-radius:20px; box-shadow:var(--shadow-lg);">
       </div>
     </div>
     <div class="hero-logos fade-up">
       <div class="hero-logo-item"><img src="Supporting Assets/External/new-Visa-logo-png-black-large-size_bb2c65.png" alt="Visa" onerror="this.style.opacity='0'"></div>
-      <div class="hero-logo-item"><img src="Supporting Assets/External/Crypto.com_Logo_b1b9db.png" alt="Crypto.com" onerror="this.style.opacity='0'"></div>
-      <div class="hero-logo-item"><img src="Supporting Assets/External/espn-logo-black-and-white_eb9ca3.png" alt="ESPN" onerror="this.style.opacity='0'"></div>
+      <div class="hero-logo-item"><img src="Supporting Assets/External/Crypto.com_Logo_b1b9db.webp" alt="Crypto.com" onerror="this.style.opacity='0'"></div>
+      <div class="hero-logo-item"><img src="Supporting Assets/External/espn-logo-black-and-white_eb9ca3.webp" alt="ESPN" onerror="this.style.opacity='0'"></div>
       <div class="hero-logo-item"><img src="Supporting Assets/External/Copy-of-Copy-of-SM_Horizontal_Oneline_Re_6ccfae.png" alt="Sony Music" style="transform:scale(1.25);" onerror="this.style.opacity='0'"></div>
-      <div class="hero-logo-item"><img src="Supporting Assets/External/apple-itunes-logo-png-transparent_5dc579.png" alt="Apple" style="transform:translateY(-20%);" onerror="this.style.opacity='0'"></div>
+      <div class="hero-logo-item"><img src="Supporting Assets/External/apple-itunes-logo-png-transparent_5dc579.webp" alt="Apple" style="transform:translateY(-20%);" onerror="this.style.opacity='0'"></div>
     </div>
   </div>
 </section>
@@ -930,7 +91,7 @@
     </div>
     <div class="bento-grid">
       <div class="bento-featured card card-hero fade-up">
-        <img src="Supporting Assets/External/Wallet_Eureka_Feature_RTB_coverage-KV_2P_bb0852.jpg" alt="Samsung Wallet - Visa Partnership" loading="lazy" onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg,#1A1F71,#0d1240)';">
+        <img src="Supporting Assets/External/Wallet_Eureka_Feature_RTB_coverage-KV_2P_bb0852.webp" alt="Samsung Wallet - Visa Partnership" loading="lazy" onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg,#1A1F71,#0d1240)';">
         <span class="cat-pill cat-pill-navy">Partnerships</span>
         <div class="card-hero-body">
           <h3 class="card-title">Samsung × Visa Global Partnership Lead</h3>
@@ -938,7 +99,7 @@
         </div>
       </div>
       <div class="card card-hero fade-up">
-        <img src="Supporting Assets/External/Paradigm_Wallet_Tap-to-Transfer_KV_1P_no_844b83.jpg" alt="Samsung × Visa Tap to Transfer" loading="lazy" style="object-position:center calc(50% + 50px);" onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg,#1A1F71,#0d1240)';">
+        <img src="Supporting Assets/External/Paradigm_Wallet_Tap-to-Transfer_KV_1P_no_844b83.webp" alt="Samsung × Visa Tap to Transfer" loading="lazy" style="object-position:center calc(50% + 50px);" onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg,#1A1F71,#0d1240)';">
         <span class="cat-pill">Product Launch</span>
         <div class="card-hero-body">
           <h3 class="card-title">Tap to Transfer</h3>
@@ -957,17 +118,17 @@
       <p class="press-list-heading">Press Coverage</p>
       <div class="press-grid">
         <a class="press-card" href="https://news.samsung.com/us/samsung-introduces-new-tap-to-transfer-feature-for-samsung-wallet/" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Visa/Samsung Newsroom.png" alt="Samsung Newsroom">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Visa/Samsung Newsroom.webp" alt="Samsung Newsroom">
           <span class="press-headline">Samsung Introduces New Tap to Transfer Feature</span>
           <span class="press-arrow">↗</span>
         </a>
         <a class="press-card" href="https://www.nfcw.com/2025/06/20/390811/samsung-rolls-out-nfc-p2p-payments-in-the-us/" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Visa/NFCW.jpg" alt="NFCW">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Visa/NFCW.webp" alt="NFCW">
           <span class="press-headline">Samsung rolls out NFC P2P payments in the US</span>
           <span class="press-arrow">↗</span>
         </a>
         <a class="press-card" href="https://thepaypers.com/payments/news/samsung-offers-new-tap-to-transfer-feature-in-its-samsung-wallet" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Visa/Paypers.png" alt="The Paypers">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Visa/Paypers.webp" alt="The Paypers">
           <span class="press-headline">Samsung offers new tap-to-transfer feature in its Samsung Wallet</span>
           <span class="press-arrow">↗</span>
         </a>
@@ -1006,7 +167,7 @@
     <div class="cards-grid popular-style fade-up" style="grid-template-columns:repeat(5,1fr); margin-bottom:1.5rem;">
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/psg-ai-nfts_2ab269.jpg" alt="Paris Saint-Germain NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#002D74,#001a44)><div class=card-placeholder-title>Paris Saint-Germain NFT</div></div>'">
+          <img src="Supporting Assets/External/psg-ai-nfts_2ab269.webp" alt="Paris Saint-Germain NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#002D74,#001a44)><div class=card-placeholder-title>Paris Saint-Germain NFT</div></div>'">
         </div>
         <div class="card-body">
           <p class="card-tag">NFT Partnership · Football</p>
@@ -1016,7 +177,7 @@
       </div>
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/original_a3e762.jpeg" alt="Philadelphia 76ers NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#006BB6,#004a80)><div class=card-placeholder-title>Philadelphia 76ers NFT</div></div>'">
+          <img src="Supporting Assets/External/original_a3e762.webp" alt="Philadelphia 76ers NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#006BB6,#004a80)><div class=card-placeholder-title>Philadelphia 76ers NFT</div></div>'">
         </div>
         <div class="card-body">
           <p class="card-tag">NFT Partnership · NBA</p>
@@ -1036,7 +197,7 @@
       </div>
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/original_7ffd00.jpeg" alt="Angel City FC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#33006F,#5B2D8E)><div class=card-placeholder-title>Angel City FC NFT</div></div>'">
+          <img src="Supporting Assets/External/original_7ffd00.webp" alt="Angel City FC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#33006F,#5B2D8E)><div class=card-placeholder-title>Angel City FC NFT</div></div>'">
         </div>
         <div class="card-body">
           <p class="card-tag">NFT Partnership · NWSL</p>
@@ -1046,7 +207,7 @@
       </div>
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/original_462f86.jpeg" alt="Aston Martin Racing NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#00594C,#007a68)><div class=card-placeholder-title>Aston Martin Racing NFT</div></div>'">
+          <img src="Supporting Assets/External/original_462f86.webp" alt="Aston Martin Racing NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#00594C,#007a68)><div class=card-placeholder-title>Aston Martin Racing NFT</div></div>'">
         </div>
         <div class="card-body">
           <p class="card-tag">NFT Partnership · F1</p>
@@ -1059,31 +220,31 @@
     <div class="cards-grid popular-style fade-up" style="grid-template-columns:repeat(5,1fr); margin-bottom:1.5rem;">
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/original_884aa2.png" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
+          <img src="Supporting Assets/External/original_884aa2.webp" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
           <span class="cat-pill" style="top:auto; bottom:1rem; left:50%; transform:translateX(-50%);">UFC 268</span>
         </div>
       </div>
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/original_72bd04.png" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
+          <img src="Supporting Assets/External/original_72bd04.webp" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
           <span class="cat-pill" style="top:auto; bottom:1rem; left:50%; transform:translateX(-50%);">UFC 270</span>
         </div>
       </div>
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/original_785d29.png" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
+          <img src="Supporting Assets/External/original_785d29.webp" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
           <span class="cat-pill" style="top:auto; bottom:1rem; left:50%; transform:translateX(-50%);">UFC 271</span>
         </div>
       </div>
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/original_61edf5.jpeg" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
+          <img src="Supporting Assets/External/original_61edf5.webp" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
           <span class="cat-pill" style="top:auto; bottom:1rem; left:50%; transform:translateX(-50%);">UFC 273</span>
         </div>
       </div>
       <div class="card">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/original_05c80c.png" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
+          <img src="Supporting Assets/External/original_05c80c.webp" alt="UFC NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#d4a017,#8a6800)><div class=card-placeholder-title>UFC NFT</div></div>'">
           <span class="cat-pill" style="top:auto; bottom:1rem; left:50%; transform:translateX(-50%);">UFC 274</span>
         </div>
       </div>
@@ -1093,7 +254,7 @@
     <div class="cards-grid popular-style fade-up" style="margin-top:1.5rem; margin-bottom:1.5rem;">
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/MoM_1920x1080_ArtworksOnly.jpg" alt="Visa × FIFA World Cup - Masters of Movement NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1A1F71,#00c5e7)><div class=card-placeholder-title>Masters of Movement</div></div>'">
+          <img src="Supporting Assets/External/MoM_1920x1080_ArtworksOnly.webp" alt="Visa × FIFA World Cup - Masters of Movement NFT" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1A1F71,#00c5e7)><div class=card-placeholder-title>Masters of Movement</div></div>'">
           <span class="cat-pill">Experiential Pop-Up</span>
         </div>
         <div class="card-body">
@@ -1103,7 +264,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/Kinetica.png" alt="F1 Crypto.com Miami Grand Prix NFT Museum" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#e82800)><div class=card-placeholder-title>F1 Miami NFT Museum</div></div>'">
+          <img src="Supporting Assets/External/Kinetica.webp" alt="F1 Crypto.com Miami Grand Prix NFT Museum" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#e82800)><div class=card-placeholder-title>F1 Miami NFT Museum</div></div>'">
           <span class="cat-pill">Experiential Pop-Up</span>
         </div>
         <div class="card-body">
@@ -1113,7 +274,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/123241_dc20df.png" alt="NFT.NYC Presenting Speaker" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#4a0080)><div class=card-placeholder-title>NFT.NYC Speaker</div></div>'">
+          <img src="Supporting Assets/External/123241_dc20df.webp" alt="NFT.NYC Presenting Speaker" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#4a0080)><div class=card-placeholder-title>NFT.NYC Speaker</div></div>'">
           <span class="cat-pill">On Stage Speaking</span>
         </div>
         <div class="card-body">
@@ -1127,12 +288,12 @@
       <p class="press-list-heading">Press Coverage</p>
       <div class="press-grid">
         <a class="press-card" href="https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.19241.html" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Crypto/Visa Press Room.jpg" alt="Visa Press Room">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Crypto/Visa Press Room.webp" alt="Visa Press Room">
           <span class="press-headline">Visa Launches 'Masters of Movement' NFT Experience at FIFA World Cup Qatar 2022</span>
           <span class="press-arrow">↗</span>
         </a>
         <a class="press-card" href="https://finance.yahoo.com/news/visa-nft-world-cup-135816325-135816998.html" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Crypto/Yahoo!_Finance_logo_2021.png" alt="Yahoo Finance">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Crypto/Yahoo!_Finance_logo_2021.webp" alt="Yahoo Finance">
           <span class="press-headline">Visa auctions 5 historic goals as NFTs ahead of World Cup</span>
           <span class="press-arrow">↗</span>
         </a>
@@ -1172,7 +333,7 @@
         <p class="exp-role">Director, Brand &amp; Entertainment Marketing Partnerships + Consumer Products</p>
         <p class="exp-tagline">From original music brands to sold-out sneakers - connecting ESPN to culture.</p>
       </div>
-      <img src="Supporting Assets/External/1*f0yJ-DnDwgYSegbzqLhP4w_52d343.jpeg" alt="ESPN partnerships" loading="lazy" class="hover-lift" style="width:320px; border-radius:var(--radius); box-shadow:var(--shadow);" onerror="this.style.display='none'">
+      <img src="Supporting Assets/External/1*f0yJ-DnDwgYSegbzqLhP4w_52d343.webp" alt="ESPN partnerships" loading="lazy" class="hover-lift" style="width:320px; border-radius:var(--radius); box-shadow:var(--shadow);" onerror="this.style.display='none'">
     </div>
 
     <!-- THE LAST DANCE ────────────────────────────────────── -->
@@ -1183,22 +344,22 @@
         </div>
       </div>
       <p class="sub-body">Led the multi-partner activation program for the Emmy-winning ESPN/Netflix documentary on Michael Jordan and the Chicago Bulls.</p>
-      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; margin-bottom:1.25rem;">
+      <div class="tld-video-grid" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.75rem; margin-bottom:1.25rem;">
         <div>
           <div class="last-dance-video" style="aspect-ratio:16/9; overflow:hidden; border-radius:var(--radius); box-shadow:var(--shadow-lg);">
-            <video src="Supporting Assets/Video/The Last Dance Trailer.mp4" poster="Supporting Assets/Video/The Last Dance Trailer thumbnail.jpeg" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
+            <video src="Supporting Assets/Video/The Last Dance Trailer.mp4" poster="Supporting Assets/Video/The Last Dance Trailer thumbnail.webp" preload="none" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
           </div>
           <p class="explore-eyebrow" style="text-align:center; margin-top:0.4rem; margin-bottom:0;">Official Trailer</p>
         </div>
         <div>
           <div class="last-dance-video" style="aspect-ratio:16/9; overflow:hidden; border-radius:var(--radius); box-shadow:var(--shadow-lg);">
-            <video src="Supporting Assets/Video/The Last Dance Exclusive Trailer.mp4" poster="Supporting Assets/Video/The Last Dance Exclusive Trailer thumbnaik.jpeg" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
+            <video src="Supporting Assets/Video/The Last Dance Exclusive Trailer.mp4" poster="Supporting Assets/Video/The Last Dance Exclusive Trailer thumbnaik.webp" preload="none" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
           </div>
           <p class="explore-eyebrow" style="text-align:center; margin-top:0.4rem; margin-bottom:0;">Exclusive Preview</p>
         </div>
         <div>
           <div class="last-dance-video" style="aspect-ratio:16/9; overflow:hidden; border-radius:var(--radius); box-shadow:var(--shadow-lg);">
-            <video src="Supporting Assets/Video/The Last Dance SNL.mp4" poster="Supporting Assets/Video/The Last Dance SNL thumbnail.jpeg" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
+            <video src="Supporting Assets/Video/The Last Dance SNL.mp4" poster="Supporting Assets/Video/The Last Dance SNL thumbnail.jpeg" preload="none" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
           </div>
           <p class="explore-eyebrow" style="text-align:center; margin-top:0.4rem; margin-bottom:0;">SNL Sketch</p>
         </div>
@@ -1206,7 +367,7 @@
       <div class="cards-grid popular-style last-dance-partners">
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/img_1589658637_b21ac262d05648ee856384259_1609a2.png" alt="Peloton × The Last Dance Ride" loading="lazy" onerror="this.src='Supporting Assets/The Last Dance/TLD promo vertical.png'">
+            <img src="Supporting Assets/External/img_1589658637_b21ac262d05648ee856384259_1609a2.webp" alt="Peloton × The Last Dance Ride" loading="lazy" onerror="this.src='Supporting Assets/The Last Dance/TLD promo vertical.webp'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Peloton Themed Ride</h3>
@@ -1216,7 +377,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/spotify playlist.jpg" alt="Spotify × Netflix × ESPN - The Last Dance Official Playlist" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1DB954,#0d7a36)><div class=card-placeholder-title>Official Spotify Playlist</div></div>'">
+            <img src="Supporting Assets/External/spotify playlist.webp" alt="Spotify × Netflix × ESPN - The Last Dance Official Playlist" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1DB954,#0d7a36)><div class=card-placeholder-title>Official Spotify Playlist</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Official Spotify Playlist</h3>
@@ -1243,14 +404,14 @@
         <div class="carousel" id="c-tld-social" data-per-page="6">
           <div class="carousel-track-wrap ar-54-16">
             <div class="carousel-track">
-              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0039.PNG" alt="The Last Dance social reaction" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0041.PNG" alt="The Last Dance social reaction" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0628.PNG" alt="The Last Dance screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0971.PNG" alt="The Last Dance screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0976.PNG" alt="The Last Dance screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_1044.PNG" alt="The Last Dance screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_1152.PNG" alt="The Last Dance screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_1163.PNG" alt="The Last Dance screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0039.webp" alt="The Last Dance social reaction" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0041.webp" alt="The Last Dance social reaction" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0628.webp" alt="The Last Dance screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0971.webp" alt="The Last Dance screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_0976.webp" alt="The Last Dance screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_1044.webp" alt="The Last Dance screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_1152.webp" alt="The Last Dance screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/The Last Dance/IMG_1163.webp" alt="The Last Dance screenshot" loading="lazy"></div>
             </div>
             <button class="carousel-btn prev" aria-label="Previous">‹</button>
             <button class="carousel-btn next" aria-label="Next">›</button>
@@ -1276,7 +437,7 @@
         <p class="press-list-heading">Press Coverage</p>
         <div class="press-grid">
           <a class="press-card" href="https://espnpressroom.com/us/press-releases/2020/04/the-last-dance-series-premiere-episodes-are-the-most-viewed-espn-documentary-content-ever-averaging-6-1-million-viewers/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/ESPN Press Room.png" alt="ESPN Press Room">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/ESPN Press Room.webp" alt="ESPN Press Room">
             <span class="press-headline">The Last Dance Premiere Is the Most-Viewed ESPN Documentary Content Ever</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -1286,32 +447,32 @@
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.nytimes.com/article/the-last-dance-jordan.html" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/The_New_York_Times_Logo.png" alt="The New York Times">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/The_New_York_Times_Logo.webp" alt="The New York Times">
             <span class="press-headline">In 'The Last Dance,' Michael Jordan and the Bulls Still Dominate</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.rollingstone.com/culture/culture-features/last-dance-michael-jordan-chicago-bulls-docuseries-espn-982875/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/Rolling Stone.png" alt="Rolling Stone">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/Rolling Stone.webp" alt="Rolling Stone">
             <span class="press-headline">Inside 'The Last Dance,' ESPN's Stunning Docuseries on Michael Jordan and the Bulls</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.npr.org/2020/04/19/836882712/michael-jordan-and-the-chicago-bulls-play-some-good-basketball-in-the-last-dance" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/National_Public_Radio_logo.svg.png" alt="NPR">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/National_Public_Radio_logo.svg.webp" alt="NPR">
             <span class="press-headline">Review: 'The Last Dance' Puts Michael Jordan In Sharper Focus</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.indiewire.com/criticism/shows/the-last-dance-review-espn-michael-jordan-documentary-1202224350/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/IndieWire_Logo.svg.png" alt="IndieWire">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/IndieWire_Logo.svg.webp" alt="IndieWire">
             <span class="press-headline">The Last Dance Review: ESPN Michael Jordan Documentary is Enthralling</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.cnbc.com/2020/04/20/espn-michael-jordan-documentary-the-last-dance-drew-6point1-million.html" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/CNBC_2025.svg.png" alt="CNBC">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/CNBC_2025.svg.webp" alt="CNBC">
             <span class="press-headline">ESPN's Michael Jordan Documentary 'The Last Dance' Drew an Average of 6.1 Million Viewers</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.hollywoodreporter.com/tv/tv-news/creative-arts-emmys-2020-best-documentary-series-4063375/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/The_Hollywood_Reporter_logo.svg.png" alt="The Hollywood Reporter">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Last Dance/The_Hollywood_Reporter_logo.svg.webp" alt="The Hollywood Reporter">
             <span class="press-headline">'The Last Dance' Wins Emmy for Best Documentary Series</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -1331,13 +492,13 @@
       <!-- Adidas Video + Photos side by side -->
       <div class="adidas-media-grid" style="display:grid; grid-template-columns:16fr 9fr; gap:0.75rem; margin-bottom:1.5rem; align-items:stretch;">
         <div class="adidas-video-wrap" style="border-radius:var(--radius); box-shadow:var(--shadow-lg); overflow:hidden;">
-          <video src="Supporting Assets/Video/Top Ten Sneaker.mp4" poster="Supporting Assets/Video/Top Ten Sneaker thumbnail.jpeg" controls style="width:100%; height:100%; border:none; display:block; object-fit:contain; background:#000;"></video>
+          <video src="Supporting Assets/Video/Top Ten Sneaker.mp4" poster="Supporting Assets/Video/Top Ten Sneaker thumbnail.jpeg" preload="none" controls style="width:100%; height:100%; border:none; display:block; object-fit:contain; background:#000;"></video>
         </div>
         <div class="adidas-photo-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem;">
-          <img src="Supporting Assets/External/adidas-top-ten-espn-e1633881761680_163a07.jpeg" alt="Adidas × ESPN - Rolling Stone" loading="lazy" data-lightbox class="adidas-photo-item" style="width:100%; aspect-ratio:1/1; object-fit:cover; object-position:top; border-radius:var(--radius-sm); display:block; cursor:zoom-in;" onerror="this.style.background='linear-gradient(135deg,#111,#333)'">
-          <img src="Supporting Assets/External/4_140cdd52-60f2-4d8f-8a2a-a4a8b89b8718_200a2e.jpg" alt="Adidas × ESPN sneaker" loading="lazy" data-lightbox class="adidas-photo-item" style="width:100%; aspect-ratio:1/1; object-fit:cover; object-position:top; border-radius:var(--radius-sm); display:block; cursor:zoom-in;" onerror="this.style.background='linear-gradient(135deg,#111,#333)'">
-          <img src="Supporting Assets/External/top-ten-sportscenter-shoe_459c2c.jpeg" alt="Adidas Top Ten × SportsCenter" loading="lazy" data-lightbox class="adidas-photo-item" style="width:100%; aspect-ratio:1/1; object-fit:cover; object-position:top; border-radius:var(--radius-sm); display:block; cursor:zoom-in;" onerror="this.style.background='linear-gradient(135deg,#111,#333)'">
-          <img src="Supporting Assets/External/slide.jpg" alt="Adidas × ESPN - Hypebeast" loading="lazy" data-lightbox class="adidas-photo-item" style="width:100%; aspect-ratio:1/1; object-fit:cover; object-position:top; border-radius:var(--radius-sm); display:block; cursor:zoom-in;" onerror="this.style.background='linear-gradient(135deg,#111,#333)'">
+          <img src="Supporting Assets/External/adidas-top-ten-espn-e1633881761680_163a07.webp" alt="Adidas × ESPN - Rolling Stone" loading="lazy" data-lightbox class="adidas-photo-item" style="width:100%; aspect-ratio:1/1; object-fit:cover; object-position:top; border-radius:var(--radius-sm); display:block; cursor:zoom-in;" onerror="this.style.background='linear-gradient(135deg,#111,#333)'">
+          <img src="Supporting Assets/External/4_140cdd52-60f2-4d8f-8a2a-a4a8b89b8718_200a2e.webp" alt="Adidas × ESPN sneaker" loading="lazy" data-lightbox class="adidas-photo-item" style="width:100%; aspect-ratio:1/1; object-fit:cover; object-position:top; border-radius:var(--radius-sm); display:block; cursor:zoom-in;" onerror="this.style.background='linear-gradient(135deg,#111,#333)'">
+          <img src="Supporting Assets/External/top-ten-sportscenter-shoe_459c2c.webp" alt="Adidas Top Ten × SportsCenter" loading="lazy" data-lightbox class="adidas-photo-item" style="width:100%; aspect-ratio:1/1; object-fit:cover; object-position:top; border-radius:var(--radius-sm); display:block; cursor:zoom-in;" onerror="this.style.background='linear-gradient(135deg,#111,#333)'">
+          <img src="Supporting Assets/External/slide.webp" alt="Adidas × ESPN - Hypebeast" loading="lazy" data-lightbox class="adidas-photo-item" style="width:100%; aspect-ratio:1/1; object-fit:cover; object-position:top; border-radius:var(--radius-sm); display:block; cursor:zoom-in;" onerror="this.style.background='linear-gradient(135deg,#111,#333)'">
         </div>
       </div>
 
@@ -1362,18 +523,18 @@
         <div class="carousel" id="c-adidas-shots" data-per-page="6">
           <div class="carousel-track-wrap ar-54-16">
             <div class="carousel-track">
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7449.PNG" alt="Adidas × ESPN launch" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7450.PNG" alt="Adidas × ESPN launch" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7498.PNG" alt="Adidas × ESPN launch" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7499.PNG" alt="Adidas × ESPN launch" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7500.PNG" alt="Adidas × ESPN launch" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7505.PNG" alt="Adidas × ESPN launch" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7518.PNG" alt="Adidas × ESPN press" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7521.PNG" alt="Adidas × ESPN press" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7524.PNG" alt="Adidas × ESPN press" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7525.PNG" alt="Adidas × ESPN press" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7547.PNG" alt="Adidas × ESPN press" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_8406.PNG" alt="Adidas × ESPN press" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7449.webp" alt="Adidas × ESPN launch" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7450.webp" alt="Adidas × ESPN launch" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7498.webp" alt="Adidas × ESPN launch" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7499.webp" alt="Adidas × ESPN launch" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7500.webp" alt="Adidas × ESPN launch" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7505.webp" alt="Adidas × ESPN launch" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7518.webp" alt="Adidas × ESPN press" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7521.webp" alt="Adidas × ESPN press" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7524.webp" alt="Adidas × ESPN press" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7525.webp" alt="Adidas × ESPN press" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_7547.webp" alt="Adidas × ESPN press" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Adidas Sneaker/IMG_8406.webp" alt="Adidas × ESPN press" loading="lazy"></div>
             </div>
             <button class="carousel-btn prev" aria-label="Previous">‹</button>
             <button class="carousel-btn next" aria-label="Next">›</button>
@@ -1401,22 +562,22 @@
       <p class="press-list-heading">Press Coverage</p>
       <div class="press-grid">
         <a class="press-card" href="https://www.rollingstone.com/product-recommendations/lifestyle/adidas-espn-top-ten-sneaker-shoes-1239942/" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Adidas/Rolling Stone.png" alt="Rolling Stone">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Adidas/Rolling Stone.webp" alt="Rolling Stone">
           <span class="press-headline">How ESPN's 'SportsCenter' Inspired Adidas' New Sneaker Collab</span>
           <span class="press-arrow">↗</span>
         </a>
         <a class="press-card" href="https://grailify.com/en/after-42-years-the-espn-channel-inspires-the-adidas-top-ten" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Adidas/Grailify.png" alt="Grailify">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Adidas/Grailify.webp" alt="Grailify">
           <span class="press-headline">After 42 Years the ESPN Channel Inspires the Adidas Top Ten</span>
           <span class="press-arrow">↗</span>
         </a>
         <a class="press-card" href="https://www.complex.com/sneakers/a/seanvillavicencio/espn-adidas-top-ten-hi-sportscenter-sneaker-interview" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Adidas/Complex.png" alt="Complex">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Adidas/Complex.webp" alt="Complex">
           <span class="press-headline">Why ESPN Chose Adidas for Its First-Ever Sneaker Collab</span>
           <span class="press-arrow">↗</span>
         </a>
         <a class="press-card" href="https://sneakernews.com/2021/07/22/espn-adidas-top-10-gz107-release-date/" target="_blank" rel="noopener">
-          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Adidas/Sneaker News.png" alt="Sneaker News">
+          <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Adidas/Sneaker News.webp" alt="Sneaker News">
           <span class="press-headline">An ESPN x adidas Top Ten Collaboration Is On The Way</span>
           <span class="press-arrow">↗</span>
         </a>
@@ -1436,39 +597,39 @@
       <div class="hype-hits-article-grid cards-grid popular-style" style="grid-template-columns:repeat(4,1fr); margin-bottom:1.75rem;">
         <a href="https://www.espn.com/espn/feature/story/_/id/29435103/top-10-sports-songs-get-stadium-arena-hyped" target="_blank" rel="noopener" class="card" style="display:block;">
           <div class="card-img-wrap" style="aspect-ratio:auto; max-height:none;">
-            <img src="Supporting Assets/Hype Hits ESPN Article/1.png" alt="ESPN Hype Hits Article" loading="lazy">
+            <img src="Supporting Assets/Hype Hits ESPN Article/1.webp" alt="ESPN Hype Hits Article" loading="lazy">
           </div>
         </a>
         <a href="https://www.espn.com/espn/feature/story/_/id/29435103/top-10-sports-songs-get-stadium-arena-hyped" target="_blank" rel="noopener" class="card" style="display:block;">
           <div class="card-img-wrap" style="aspect-ratio:auto; max-height:none;">
-            <img src="Supporting Assets/Hype Hits ESPN Article/2.png" alt="ESPN Hype Hits Article" loading="lazy">
+            <img src="Supporting Assets/Hype Hits ESPN Article/2.webp" alt="ESPN Hype Hits Article" loading="lazy">
           </div>
         </a>
         <a href="https://www.espn.com/espn/feature/story/_/id/29435103/top-10-sports-songs-get-stadium-arena-hyped" target="_blank" rel="noopener" class="card" style="display:block;">
           <div class="card-img-wrap" style="aspect-ratio:auto; max-height:none;">
-            <img src="Supporting Assets/Hype Hits ESPN Article/3.png" alt="ESPN Hype Hits Article" loading="lazy">
+            <img src="Supporting Assets/Hype Hits ESPN Article/3.webp" alt="ESPN Hype Hits Article" loading="lazy">
           </div>
         </a>
         <a href="https://www.espn.com/espn/feature/story/_/id/29435103/top-10-sports-songs-get-stadium-arena-hyped" target="_blank" rel="noopener" class="card" style="display:block;">
           <div class="card-img-wrap" style="aspect-ratio:auto; max-height:none;">
-            <img src="Supporting Assets/Hype Hits ESPN Article/4.png" alt="ESPN Hype Hits Article" loading="lazy">
+            <img src="Supporting Assets/Hype Hits ESPN Article/4.webp" alt="ESPN Hype Hits Article" loading="lazy">
           </div>
         </a>
       </div>
 
       <p class="card-tag" style="margin-bottom:0.75rem; margin-top:1.5rem;">Genre-Specific Curated Playlists</p>
       <!-- Album Art Carousel + Billboard Image -->
-      <div style="display:grid; grid-template-columns:3fr 1fr; gap:1.5rem; margin-bottom:1.5rem; align-items:start;">
+      <div class="hype-covers-grid" style="display:grid; grid-template-columns:3fr 1fr; gap:1.5rem; margin-bottom:1.5rem; align-items:start;">
         <div class="carousel fade-up" id="c-hype-covers" data-per-page="3">
         <div class="carousel-track-wrap ar-3-1">
           <div class="carousel-track">
-            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_HOF_FINAL_1x1.jpg" alt="Hype Hits Hall of Fame" loading="lazy"></div>
-            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_POP_FINAL_1x1.jpg" alt="Hype Hits Best of Pop" loading="lazy"></div>
-            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_HIPHOP_FINAL_1x1.jpg" alt="Hype Hits Best of Hip Hop" loading="lazy"></div>
-            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_ROCK_FINAL_1x1.jpg" alt="Hype Hits Best of Rock" loading="lazy"></div>
-            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_COUNTRY_FINAL_1x1.jpg" alt="Hype Hits Best of Country" loading="lazy"></div>
-            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_LATIN_FINAL_1x1.jpg" alt="Hype Hits Best of Latin" loading="lazy"></div>
-            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_DANCE_FINAL_1x1.jpg" alt="Hype Hits Best of Dance" loading="lazy"></div>
+            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_HOF_FINAL_1x1.webp" alt="Hype Hits Hall of Fame" loading="lazy"></div>
+            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_POP_FINAL_1x1.webp" alt="Hype Hits Best of Pop" loading="lazy"></div>
+            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_HIPHOP_FINAL_1x1.webp" alt="Hype Hits Best of Hip Hop" loading="lazy"></div>
+            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_ROCK_FINAL_1x1.webp" alt="Hype Hits Best of Rock" loading="lazy"></div>
+            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_COUNTRY_FINAL_1x1.webp" alt="Hype Hits Best of Country" loading="lazy"></div>
+            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_LATIN_FINAL_1x1.webp" alt="Hype Hits Best of Latin" loading="lazy"></div>
+            <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/21072745MSC_BRD_HYPEHITS_DANCE_FINAL_1x1.webp" alt="Hype Hits Best of Dance" loading="lazy"></div>
           </div>
           <button class="carousel-btn prev" aria-label="Previous">‹</button>
           <button class="carousel-btn next" aria-label="Next">›</button>
@@ -1485,7 +646,7 @@
       </div>
         <!-- Billboard image -->
         <div style="aspect-ratio:1/1; overflow:hidden; border-radius:var(--radius); box-shadow:var(--shadow);">
-          <img src="Supporting Assets/External/21182_b6a00d.jpg" alt="Hype Hits Billboard" loading="lazy" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.background='#e0e0e0';this.removeAttribute('src');">
+          <img src="Supporting Assets/External/21182_b6a00d.webp" alt="Hype Hits Billboard" loading="lazy" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.background='#e0e0e0';this.removeAttribute('src');">
         </div>
       </div><!-- /2-col grid -->
 
@@ -1494,22 +655,22 @@
       <div class="cards-grid popular-style takeover-grid fade-up" style="grid-template-columns:repeat(4,1fr);">
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/Hype Hits Shots of Hype/21088386SOE_HYPE_HIT_LUKE_COMB_1x1 (1).jpg" alt="Luke Combs Takeover" loading="lazy">
+            <img src="Supporting Assets/Hype Hits Shots of Hype/21088386SOE_HYPE_HIT_LUKE_COMB_1x1 (1).webp" alt="Luke Combs Takeover" loading="lazy">
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/Hype Hits Shots of Hype/branding_hype-hits_cover-art_takeover_006.jpg" alt="2 Chainz Takeover" loading="lazy">
+            <img src="Supporting Assets/Hype Hits Shots of Hype/branding_hype-hits_cover-art_takeover_006.webp" alt="2 Chainz Takeover" loading="lazy">
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/Hype Hits Shots of Hype/branding_hype-hits_cover-art_takeover_009.jpg" alt="Jay Bilas Takeover" loading="lazy">
+            <img src="Supporting Assets/Hype Hits Shots of Hype/branding_hype-hits_cover-art_takeover_009.webp" alt="Jay Bilas Takeover" loading="lazy">
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/Hype Hits Shots of Hype/21064126EBL_CBL_CWS_Hype_1x1_v4.jpg" alt="Adam Doleac Takeover" loading="lazy">
+            <img src="Supporting Assets/Hype Hits Shots of Hype/21064126EBL_CBL_CWS_Hype_1x1_v4.webp" alt="Adam Doleac Takeover" loading="lazy">
           </div>
         </div>
       </div>
@@ -1520,16 +681,16 @@
         <div class="carousel" id="c-hype-shots" data-per-page="6">
           <div class="carousel-track-wrap ar-54-16">
             <div class="carousel-track">
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_2029.PNG" alt="228,201 likes - Best Pregame Song post" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1936.PNG" alt="Ciara Instagram Story repost" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1867.PNG" alt="Apple Music - Hype Hits by Jeff Zeller" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1868.PNG" alt="Spotify Jock Jams folder" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_3506.PNG" alt="Spotify - 6,282 saves on 2 Chainz playlist" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/HH new.jpg" alt="Hype Hits social screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1906.PNG" alt="Hype Hits social screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1915.PNG" alt="Hype Hits social screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1920.PNG" alt="Hype Hits social screenshot" loading="lazy"></div>
-              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_2027.PNG" alt="Hype Hits social screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_2029.webp" alt="228,201 likes - Best Pregame Song post" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1936.webp" alt="Ciara Instagram Story repost" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1867.webp" alt="Apple Music - Hype Hits by Jeff Zeller" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1868.webp" alt="Spotify Jock Jams folder" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_3506.webp" alt="Spotify - 6,282 saves on 2 Chainz playlist" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/HH new.webp" alt="Hype Hits social screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1906.webp" alt="Hype Hits social screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1915.webp" alt="Hype Hits social screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_1920.webp" alt="Hype Hits social screenshot" loading="lazy"></div>
+              <div class="carousel-slide"><img src="Supporting Assets/Hype Hits Shots of Hype/IMG_2027.webp" alt="Hype Hits social screenshot" loading="lazy"></div>
             </div>
             <button class="carousel-btn prev" aria-label="Previous">‹</button>
             <button class="carousel-btn next" aria-label="Next">›</button>
@@ -1571,22 +732,22 @@
         <p class="press-list-heading">Press Coverage</p>
         <div class="press-grid">
           <a class="press-card" href="https://espnpressroom.com/us/press-releases/2020/07/espn-celebrates-the-25th-anniversary-of-jock-jams-launches-new-music-curation-brand-hype-hits/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Hype Hits/ESPN Press Room.png" alt="ESPN Press Room">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Hype Hits/ESPN Press Room.webp" alt="ESPN Press Room">
             <span class="press-headline">ESPN Celebrates the 25th Anniversary of Jock Jams, Launches New Music Curation Brand Hype Hits</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.billboard.com/lists/best-jock-jams-sports-songs-all-time/queen-we-will-rock-you-1977/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Hype Hits/billboard.png" alt="Billboard">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Hype Hits/billboard.webp" alt="Billboard">
             <span class="press-headline">ESPN and Hollywood Records Team Up for 'Hype Hits' Partnership</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.disneyadvertising.com/app/uploads/2025/07/Generation_Stream_Sports_Edition_Brand_Book.pdf" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Hype Hits/Disney_logo.png" alt="Disney Advertising">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Hype Hits/Disney_logo.webp" alt="Disney Advertising">
             <span class="press-headline">Generation Stream: Sports Edition</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.espn.com/espn/feature/story/_/id/29435103/top-10-sports-songs-get-stadium-arena-hyped" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Hype Hits/ESPN_wordmark.svg.png" alt="ESPN">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Hype Hits/ESPN_wordmark.svg.webp" alt="ESPN">
             <span class="press-headline">Top 10 Sports Songs to Get the Stadium & Arena Hyped</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -1606,41 +767,41 @@
       <div class="soh-grid fade-up">
         <!-- Cover Art -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Hype Hits Shots of Hype/Shots of Hype Playlist.png" alt="Shots of Hype" loading="lazy">
+          <img src="Supporting Assets/Hype Hits Shots of Hype/Shots of Hype Playlist.webp" alt="Shots of Hype" loading="lazy">
         </div>
         <!-- Adam Schefter -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Schefter.png" alt="Adam Schefter" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Schefter.webp" alt="Adam Schefter" loading="lazy">
           <div class="soh-name">Adam Schefter</div>
         </div>
         <!-- Rece Davis -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Rece.jpeg" alt="Rece Davis" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Rece.webp" alt="Rece Davis" loading="lazy">
           <div class="soh-name">Rece Davis</div>
         </div>
         <!-- Rex Ryan -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Rex.jpg" alt="Rex Ryan" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Rex.webp" alt="Rex Ryan" loading="lazy">
           <div class="soh-name">Rex Ryan</div>
         </div>
         <!-- Ryan Clark -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Clark.png" alt="Ryan Clark" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Clark.webp" alt="Ryan Clark" loading="lazy">
           <div class="soh-name">Ryan Clark</div>
         </div>
         <!-- Mina Kimes -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Mina.jpeg" alt="Mina Kimes" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Mina.webp" alt="Mina Kimes" loading="lazy">
           <div class="soh-name">Mina Kimes</div>
         </div>
         <!-- Jessica Mendoza -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Mendoza.jpeg" alt="Jessica Mendoza" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Mendoza.webp" alt="Jessica Mendoza" loading="lazy">
           <div class="soh-name">Jessica Mendoza</div>
         </div>
         <!-- Julie Foudy -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Foudy.jpg" alt="Julie Foudy" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Foudy.webp" alt="Julie Foudy" loading="lazy">
           <div class="soh-name">Julie Foudy</div>
         </div>
         <!-- Sarah Spain -->
@@ -1650,22 +811,22 @@
         </div>
         <!-- Clinton Yates -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Clinton.png" alt="Clinton Yates" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Clinton.webp" alt="Clinton Yates" loading="lazy">
           <div class="soh-name">Clinton Yates</div>
         </div>
         <!-- Taylor Twellman -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Twellman.png" alt="Taylor Twellman" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Twellman.webp" alt="Taylor Twellman" loading="lazy">
           <div class="soh-name">Taylor Twellman</div>
         </div>
         <!-- Dick Vitale -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Vitale.jpg" alt="Dick Vitale" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Vitale.webp" alt="Dick Vitale" loading="lazy">
           <div class="soh-name">Dick Vitale</div>
         </div>
         <!-- Jesse Washington -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Washington.jpg" alt="Jesse Washington" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Washington.webp" alt="Jesse Washington" loading="lazy">
           <div class="soh-name">Jesse Washington</div>
         </div>
         <!-- Seth Greenberg -->
@@ -1675,12 +836,12 @@
         </div>
         <!-- Elle Duncan -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Duncan.png" alt="Elle Duncan" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Duncan.webp" alt="Elle Duncan" loading="lazy">
           <div class="soh-name">Elle Duncan</div>
         </div>
         <!-- Chiney Ogwumike -->
         <div class="soh-cell">
-          <img src="Supporting Assets/Shots of Hype Headshots/Chiney.jpg" alt="Chiney Ogwumike" loading="lazy">
+          <img src="Supporting Assets/Shots of Hype Headshots/Chiney.webp" alt="Chiney Ogwumike" loading="lazy">
           <div class="soh-name">Chiney Ogwumike</div>
         </div>
       </div>
@@ -1688,7 +849,7 @@
       <div class="cards-grid" style="display:none;">
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/Hype Hits Shots of Hype/Shots of Hype Playlist.png" alt="Shots of Hype official album cover" loading="lazy">
+            <img src="Supporting Assets/Hype Hits Shots of Hype/Shots of Hype Playlist.webp" alt="Shots of Hype official album cover" loading="lazy">
           </div>
           <div class="card-body">
             <p class="card-tag">Disney Music Collaboration</p>
@@ -1698,7 +859,7 @@
         </div>
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/Hype Hits Shots of Hype/IMG_7474.PNG" alt="ESPN Press Room announcement" loading="lazy">
+            <img src="Supporting Assets/Hype Hits Shots of Hype/IMG_7474.webp" alt="ESPN Press Room announcement" loading="lazy">
           </div>
           <div class="card-body">
             <p class="card-tag">Press · ESPN Press Room</p>
@@ -1708,7 +869,7 @@
         </div>
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/Hype Hits Shots of Hype/IMG_7890.PNG" alt="TikTok UGC: Shots of Hype" loading="lazy">
+            <img src="Supporting Assets/Hype Hits Shots of Hype/IMG_7890.webp" alt="TikTok UGC: Shots of Hype" loading="lazy">
           </div>
           <div class="card-body">
             <p class="card-tag">UGC · TikTok · Cultural Pickup</p>
@@ -1725,12 +886,12 @@
         <p class="press-list-heading">Press Coverage</p>
         <div class="press-grid">
           <a class="press-card" href="https://espnpressroom.com/us/press-releases/2021/10/espn-announces-digital-audio-series-shots-of-hype/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Shots of Hype/ESPN Press Room.png" alt="ESPN Press Room">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Shots of Hype/ESPN Press Room.webp" alt="ESPN Press Room">
             <span class="press-headline">ESPN Announces Digital Audio Series 'Shots of Hype'</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.hollywoodreporter.com" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Shots of Hype/The_Hollywood_Reporter_logo.svg.png" alt="The Hollywood Reporter">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Shots of Hype/The_Hollywood_Reporter_logo.svg.webp" alt="The Hollywood Reporter">
             <span class="press-headline">ESPN Launches 'Shots of Hype' Audio Series</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -1740,7 +901,7 @@
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.laughingplace.com/w/news/2021/10/08/espn-shots-of-hype-vol-1/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Shots of Hype/LaughingPlace-Logo-1-Line-1.png" alt="Laughing Place">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Shots of Hype/LaughingPlace-Logo-1-Line-1.webp" alt="Laughing Place">
             <span class="press-headline">ESPN Shots of Hype Vol. 1</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -1759,7 +920,7 @@
       <div class="cards-grid popular-style poster-grid content-marketing-grid" style="grid-template-columns:repeat(6,1fr);">
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/MV5BNjIwYTNmNWQtNGY1YS00YzBjLWE5NWItMmI5_2169ca.jpg" alt="Rodman: For Better or Worse" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#3a0000)><div class=card-placeholder-title>Rodman</div></div>'">
+            <img src="Supporting Assets/External/MV5BNjIwYTNmNWQtNGY1YS00YzBjLWE5NWItMmI5_2169ca.webp" alt="Rodman: For Better or Worse" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#3a0000)><div class=card-placeholder-title>Rodman</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Rodman: For Better or Worse</h3>
@@ -1769,7 +930,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/MV5BMjg0ZjE2MGItMmQxZC00ZTEzLWExNjAtNjZh_471bbc.jpg" alt="Chuck &amp; Tito" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a0a00,#7a3800)><div class=card-placeholder-title>Chuck &amp; Tito</div></div>'">
+            <img src="Supporting Assets/External/MV5BMjg0ZjE2MGItMmQxZC00ZTEzLWExNjAtNjZh_471bbc.webp" alt="Chuck &amp; Tito" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a0a00,#7a3800)><div class=card-placeholder-title>Chuck &amp; Tito</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Chuck &amp; Tito</h3>
@@ -1779,7 +940,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/Vick.jpg" alt="Vick" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#001a00,#004a00)><div class=card-placeholder-title>Vick</div></div>'">
+            <img src="Supporting Assets/External/Vick.webp" alt="Vick" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#001a00,#004a00)><div class=card-placeholder-title>Vick</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Vick</h3>
@@ -1789,7 +950,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/lance_poster_final-1_b451d0.jpg" alt="LANCE" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#0a0a1a,#1a1a4a)><div class=card-placeholder-title>LANCE</div></div>'">
+            <img src="Supporting Assets/External/lance_poster_final-1_b451d0.webp" alt="LANCE" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#0a0a1a,#1a1a4a)><div class=card-placeholder-title>LANCE</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">LANCE</h3>
@@ -1799,7 +960,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/MV5BMjQ5ZThjZjUtMzY5Ny00NTU5LWJhMGYtNzkx_030a0c.jpg" alt="Be Water" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a0a00,#4a2800)><div class=card-placeholder-title>Be Water</div></div>'">
+            <img src="Supporting Assets/External/MV5BMjQ5ZThjZjUtMzY5Ny00NTU5LWJhMGYtNzkx_030a0c.webp" alt="Be Water" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a0a00,#4a2800)><div class=card-placeholder-title>Be Water</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Be Water</h3>
@@ -1809,7 +970,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/infinite_race.jpg" alt="Long Gone Summer" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#001a10,#003a20)><div class=card-placeholder-title>Long Gone Summer</div></div>'">
+            <img src="Supporting Assets/External/infinite_race.webp" alt="Long Gone Summer" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#001a10,#003a20)><div class=card-placeholder-title>Long Gone Summer</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Long Gone Summer</h3>
@@ -1819,7 +980,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/long_gone_summer.jpg" alt="The Infinite Race" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#001010,#003040)><div class=card-placeholder-title>The Infinite Race</div></div>'">
+            <img src="Supporting Assets/External/long_gone_summer.webp" alt="The Infinite Race" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#001010,#003040)><div class=card-placeholder-title>The Infinite Race</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">The Infinite Race</h3>
@@ -1829,7 +990,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/MV5BNGYxMTUxNGUtOTQzOS00ZjE2LWI0MzUtMWJk_17ad60.jpg" alt="Al Davis vs. The NFL" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a0000,#5a0000)><div class=card-placeholder-title>Al Davis vs. The NFL</div></div>'">
+            <img src="Supporting Assets/External/MV5BNGYxMTUxNGUtOTQzOS00ZjE2LWI0MzUtMWJk_17ad60.webp" alt="Al Davis vs. The NFL" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a0000,#5a0000)><div class=card-placeholder-title>Al Davis vs. The NFL</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Al Davis vs. The NFL</h3>
@@ -1839,7 +1000,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/MV5BNjU3NmVhYTktMGM4Ny00NDU0LTkwOWEtZDAy_f53b1b.jpg" alt="Breakaway" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#00101a,#002a40)><div class=card-placeholder-title>Breakaway</div></div>'">
+            <img src="Supporting Assets/External/MV5BNjU3NmVhYTktMGM4Ny00NDU0LTkwOWEtZDAy_f53b1b.webp" alt="Breakaway" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#00101a,#002a40)><div class=card-placeholder-title>Breakaway</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Breakaway</h3>
@@ -1849,7 +1010,7 @@
         </div>
         <div class="card" style="display:flex; flex-direction:column;">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/MV5BNTFiNjNjNWEtYTEzMy00YTllLTg4MDgtYmVl_83cfa1.jpg" alt="Once Upon a Time in Queens" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#333)><div class=card-placeholder-title>Once Upon a Time in Queens</div></div>'">
+            <img src="Supporting Assets/External/MV5BNTFiNjNjNWEtYTEzMy00YTllLTg4MDgtYmVl_83cfa1.webp" alt="Once Upon a Time in Queens" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#333)><div class=card-placeholder-title>Once Upon a Time in Queens</div></div>'">
           </div>
           <div class="card-body" style="display:flex; flex-direction:column; flex:1; justify-content:flex-start;">
             <h3 class="card-title">Once Upon a Time in Queens</h3>
@@ -1882,7 +1043,7 @@
         <p class="press-list-heading">Press Coverage</p>
         <div class="press-grid">
           <a class="press-card" href="https://www.rollingstone.com/tv-movies/tv-movie-reviews/be-water-espn-review-1008566/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/Rolling Stone.png" alt="Rolling Stone">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/Rolling Stone.webp" alt="Rolling Stone">
             <span class="press-headline">Be Water Review: Bruce Lee Doc Charts a Warrior's Journey</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -1892,7 +1053,7 @@
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.nbcnews.com/think/opinion/espn-s-bruce-lee-30-30-be-water-shows-how-ncna1226631" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/NBC_News_logo.png" alt="NBC News">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/NBC_News_logo.webp" alt="NBC News">
             <span class="press-headline">ESPN's Be Water Shows How Much Racism Stole From Bruce Lee</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -1902,22 +1063,22 @@
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://awfulannouncing.com/espn/espn-once-upon-a-time-in-queens-rollicking-tribute-unforgettable-1986-new-york-mets.html" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/Awful Announcing.png" alt="Awful Announcing">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/Awful Announcing.webp" alt="Awful Announcing">
             <span class="press-headline">Once Upon a Time in Queens: A Rollicking Tribute to the 1986 Mets</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.washingtonpost.com/sports/2019/07/16/espn-planning-new-daily-morning-podcast-its-audio-push-continues/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/The_Logo_of_The_Washington_Post_Newspaper.svg.png" alt="The Washington Post">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/The_Logo_of_The_Washington_Post_Newspaper.svg.webp" alt="The Washington Post">
             <span class="press-headline">ESPN Planning New Daily Morning Podcast as Its Audio Push Continues</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.si.com/nba/2019/08/15/30-30-dennis-rodman-for-better-or-worse-trailer-video" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/SportsIllustratedLogo.svg.png" alt="Sports Illustrated">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/SportsIllustratedLogo.svg.webp" alt="Sports Illustrated">
             <span class="press-headline">ESPN Releases Trailer for 30 for 30 'Rodman: For Better or Worse'</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.eonline.com/news/1155606/lance-armstrong-documentary-see-the-biggest-bombshells-from-espn-s-30-for-30" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/Eonline-Black2.jpg" alt="E! Online">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/30 for 30/Eonline-Black2.webp" alt="E! Online">
             <span class="press-headline">Lance Armstrong Documentary: The Biggest Bombshells From ESPN's 30 for 30</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -1935,10 +1096,10 @@
             <div class="carousel" id="c-mets" style="border-radius:var(--radius) var(--radius) 0 0; overflow:hidden; aspect-ratio:1/1;">
               <div class="carousel-track-wrap ar-1-1" style="border-radius:var(--radius) var(--radius) 0 0;">
                 <div class="carousel-track">
-                  <div class="carousel-slide"><img src="Supporting Assets/86 Mets/IMG_7726.PNG" alt="'86 Mets - Once Upon a Time in Queens" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/86 Mets/BD40B887-8D85-42DC-A211-F18CBE536461.jpg" alt="'86 Mets - Once Upon a Time in Queens" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/86 Mets/IMG_7170.PNG" alt="'86 Mets × ESPN × Topps card set" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/86 Mets/IMG_7727.PNG" alt="'86 Mets - Once Upon a Time in Queens" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/86 Mets/IMG_7726.webp" alt="'86 Mets - Once Upon a Time in Queens" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/86 Mets/BD40B887-8D85-42DC-A211-F18CBE536461.webp" alt="'86 Mets - Once Upon a Time in Queens" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/86 Mets/IMG_7170.webp" alt="'86 Mets × ESPN × Topps card set" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/86 Mets/IMG_7727.webp" alt="'86 Mets - Once Upon a Time in Queens" loading="lazy"></div>
                 </div>
                 <button class="carousel-btn prev" aria-label="Previous">‹</button>
                 <button class="carousel-btn next" aria-label="Next">›</button>
@@ -1956,20 +1117,20 @@
             <div class="carousel" id="c-amazon" style="border-radius:var(--radius) var(--radius) 0 0; overflow:hidden; aspect-ratio:1/1;">
               <div class="carousel-track-wrap ar-1-1" style="border-radius:var(--radius) var(--radius) 0 0;">
                 <div class="carousel-track">
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_6971.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/02E9AAC0-9318-4DA0-B03D-A62A4A902226.jpg" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/32AB7C30-E032-4568-B660-3F455749F3F9.jpg" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/A24AA886-826E-4E0E-8202-6C1C036D41F0.jpg" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/EAE41C42-B9F0-4479-A7AE-BD32796A712A.jpg" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/F2A4C618-3895-449A-8A02-6C1144D704E1.jpg" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3419.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3420.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3839.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3931.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3937.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_4294.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_4295.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_5848.PNG" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_6971.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/02E9AAC0-9318-4DA0-B03D-A62A4A902226.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/32AB7C30-E032-4568-B660-3F455749F3F9.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/A24AA886-826E-4E0E-8202-6C1C036D41F0.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/EAE41C42-B9F0-4479-A7AE-BD32796A712A.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/F2A4C618-3895-449A-8A02-6C1144D704E1.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3419.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3420.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3839.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3931.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_3937.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_4294.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_4295.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Amazon Shop/IMG_5848.webp" alt="ESPN Amazon Shop" loading="lazy"></div>
                 </div>
                 <button class="carousel-btn prev" aria-label="Previous">‹</button>
                 <button class="carousel-btn next" aria-label="Next">›</button>
@@ -1984,7 +1145,7 @@
         </div>
         <div class="card">
           <div class="card-img-wrap" style="aspect-ratio:1/1; max-height:none;">
-            <img src="Supporting Assets/Amazon Shop/ESPN Merch.PNG" alt="ESPN Merch Shop" loading="lazy" style="object-position: top; transform: scale(1.2) translateY(-20%); transform-origin: top center;" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#cc0000,#7a0000)><div class=card-placeholder-title>ESPN Merch Shop</div></div>'">
+            <img src="Supporting Assets/Amazon Shop/ESPN Merch.webp" alt="ESPN Merch Shop" loading="lazy" style="object-position: top; transform: scale(1.2) translateY(-20%); transform-origin: top center;" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#cc0000,#7a0000)><div class=card-placeholder-title>ESPN Merch Shop</div></div>'">
             <span class="cat-pill">DTC e-Commerce</span>
           </div>
           <div class="card-body">
@@ -2002,7 +1163,7 @@
       <div class="cards-grid popular-style brand-strategy-grid" style="grid-template-columns:repeat(3,1fr);">
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/External/ESPN-BET-Logo-Primary-1352x1080_ea02b5.jpg" alt="ESPN Bet" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#b0001a,#7a0012)><div class=card-placeholder-title>ESPN Bet</div></div>'">
+            <img src="Supporting Assets/External/ESPN-BET-Logo-Primary-1352x1080_ea02b5.webp" alt="ESPN Bet" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#b0001a,#7a0012)><div class=card-placeholder-title>ESPN Bet</div></div>'">
             <span class="cat-pill">Betting Brand</span>
           </div>
           <div class="card-body">
@@ -2015,13 +1176,13 @@
             <div class="carousel" id="c-espn-studios" style="border-radius:var(--radius) var(--radius) 0 0; overflow:hidden; aspect-ratio:1/1;">
               <div class="carousel-track-wrap ar-1-1" style="border-radius:var(--radius) var(--radius) 0 0;">
                 <div class="carousel-track">
-                  <div class="carousel-slide"><img src="Supporting Assets/Other/ESPN Studios.png" alt="ESPN Studios" loading="lazy" style="transform:scale(1.25); transform-origin:center center;"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Studios/ESPN-Super-Bowl-LIV-Coverage-MIAMI_04.jpg" alt="ESPN Studios Miami" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Studios/yogurt-bar.jpg" alt="ESPN Studios" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Studios/NCS_ESPN_Las-Vegas_studio-facility_06.jpg" alt="ESPN Studios Las Vegas" loading="lazy" style="object-position: right center;"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Studios/NCS_ESPN_Las-Vegas_studio-facility_01.jpg" alt="ESPN Studios Las Vegas" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Studios/NCS_ESPN_Las-Vegas_studio-facility_03.jpg" alt="ESPN Studios Las Vegas" loading="lazy"></div>
-                  <div class="carousel-slide"><img src="Supporting Assets/Studios/NCS_ESPN_Las-Vegas_studio-facility_04.jpg" alt="ESPN Studios Las Vegas" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Other/ESPN Studios.webp" alt="ESPN Studios" loading="lazy" style="transform:scale(1.25); transform-origin:center center;"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Studios/ESPN-Super-Bowl-LIV-Coverage-MIAMI_04.webp" alt="ESPN Studios Miami" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Studios/yogurt-bar.webp" alt="ESPN Studios" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Studios/NCS_ESPN_Las-Vegas_studio-facility_06.webp" alt="ESPN Studios Las Vegas" loading="lazy" style="object-position: right center;"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Studios/NCS_ESPN_Las-Vegas_studio-facility_01.webp" alt="ESPN Studios Las Vegas" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Studios/NCS_ESPN_Las-Vegas_studio-facility_03.webp" alt="ESPN Studios Las Vegas" loading="lazy"></div>
+                  <div class="carousel-slide"><img src="Supporting Assets/Studios/NCS_ESPN_Las-Vegas_studio-facility_04.webp" alt="ESPN Studios Las Vegas" loading="lazy"></div>
                   <div class="carousel-slide"><img src="Supporting Assets/Studios/Doug-Kezirian-scaled.jpg.webp" alt="ESPN Studios" loading="lazy"></div>
                 </div>
                 <button class="carousel-btn prev" aria-label="Previous">‹</button>
@@ -2037,7 +1198,7 @@
         </div>
         <div class="card">
           <div class="card-img-wrap">
-            <img src="Supporting Assets/Other/IMG_3766.JPG" alt="ESPN Music" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#cc0000,#8a0000)><div class=card-placeholder-title>ESPN Music</div></div>'">
+            <img src="Supporting Assets/Other/IMG_3766.webp" alt="ESPN Music" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#cc0000,#8a0000)><div class=card-placeholder-title>ESPN Music</div></div>'">
             <span class="cat-pill">Music Brand</span>
           </div>
           <div class="card-body">
@@ -2050,22 +1211,22 @@
         <p class="press-list-heading">Press Coverage</p>
         <div class="press-grid">
           <a class="press-card" href="https://www.wsj.com/business/media/espn-penn-entertainment-sports-betting-deal-ac02b9a6" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Brand Strategy/WSJ_Logo.svg.png" alt="The Wall Street Journal">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Brand Strategy/WSJ_Logo.svg.webp" alt="The Wall Street Journal">
             <span class="press-headline">ESPN Strikes $2 Billion Sports-Betting Deal With Penn Entertainment</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://espnpressroom.com/us/press-releases/2023/08/espn-to-launch-espn-bet-in-a-new-agreement-with-penn-entertainment/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Brand Strategy/ESPN Press Room.png" alt="ESPN Press Room">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Brand Strategy/ESPN Press Room.webp" alt="ESPN Press Room">
             <span class="press-headline">ESPN to Launch ESPN BET in a New Agreement with PENN Entertainment</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.sportico.com/business/sports-betting/2023/espn-bet-launch-penn-entertainment-1234746557/" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Brand Strategy/Sportico.jpeg" alt="Sportico">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Brand Strategy/Sportico.webp" alt="Sportico">
             <span class="press-headline">ESPN Bet, the Official Sportsbook of ESPN and Penn, Launches Tuesday</span>
             <span class="press-arrow">↗</span>
           </a>
           <a class="press-card" href="https://www.cnbc.com/2023/08/08/espn-bet-sports-betting-app-launch-penn-entertainment.html" target="_blank" rel="noopener">
-            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Brand Strategy/CNBC_2025.svg.png" alt="CNBC">
+            <img class="press-pub-logo" src="Supporting Assets/Logos/Press/Brand Strategy/CNBC_2025.svg.webp" alt="CNBC">
             <span class="press-headline">ESPN Bet sports betting app launch with Penn Entertainment</span>
             <span class="press-arrow">↗</span>
           </a>
@@ -2100,7 +1261,7 @@
     <div class="cards-grid">
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/Other/Sony Music Artists.jpg" alt="Sony Music Artists" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#2a2a2a,#555)><div class=card-placeholder-title>Sony Music</div></div>'">
+          <img src="Supporting Assets/Other/Sony Music Artists.webp" alt="Sony Music Artists" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#2a2a2a,#555)><div class=card-placeholder-title>Sony Music</div></div>'">
           <span class="cat-pill cat-pill-navy">Chief of Staff</span>
         </div>
         <div class="card-body">
@@ -2110,7 +1271,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/Other/Sony Music Podcasts.jpg" alt="Sony Music Podcasts" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#444,#222)><div class=card-placeholder-title>Investment Thesis</div></div>'">
+          <img src="Supporting Assets/Other/Sony Music Podcasts.webp" alt="Sony Music Podcasts" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#444,#222)><div class=card-placeholder-title>Investment Thesis</div></div>'">
           <span class="cat-pill cat-pill-navy">Corporate Strategy</span>
         </div>
         <div class="card-body">
@@ -2120,7 +1281,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/Other/Music industry revenue.png" alt="Music Industry Revenue" loading="lazy" style="object-position: 85% center;" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#2d2d50)><div class=card-placeholder-title>Executive Keynotes</div></div>'">
+          <img src="Supporting Assets/Other/Music industry revenue.webp" alt="Music Industry Revenue" loading="lazy" style="object-position: 85% center;" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#2d2d50)><div class=card-placeholder-title>Executive Keynotes</div></div>'">
           <span class="cat-pill cat-pill-navy">Executive Communications</span>
         </div>
         <div class="card-body">
@@ -2147,7 +1308,7 @@
     <div class="cards-grid popular-style">
       <div class="card fade-up">
         <div class="card-video-wrap" style="position:relative;">
-          <video src="Supporting Assets/Video/Marshmello.mp4" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
+          <video src="Supporting Assets/Video/Marshmello.mp4" poster="Supporting Assets/Video/Marshmello thumbnail.jpg" preload="none" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
           <span class="cat-pill">A&amp;R</span>
         </div>
         <div class="card-body">
@@ -2157,7 +1318,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/Other/Avicii interview.jpg" alt="Dancing Astronaut" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#2d2d50)><div class=card-placeholder-title>Dancing Astronaut</div></div>'">
+          <img src="Supporting Assets/Other/Avicii interview.webp" alt="Dancing Astronaut" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#2d2d50)><div class=card-placeholder-title>Dancing Astronaut</div></div>'">
           <span class="cat-pill">Digital Media</span>
         </div>
         <div class="card-body">
@@ -2167,7 +1328,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/Other/Jeff and Tim.png" alt="At Night Management / PRMD Records" loading="lazy" style="object-position: 40% center;" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#2d2d50)><div class=card-placeholder-title>At Night Mgmt · PRMD</div></div>'">
+          <img src="Supporting Assets/Other/Jeff and Tim.webp" alt="At Night Management / PRMD Records" loading="lazy" style="object-position: 40% center;" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#2d2d50)><div class=card-placeholder-title>At Night Mgmt · PRMD</div></div>'">
           <span class="cat-pill">Label &amp; Artist Management</span>
         </div>
         <div class="card-body">
@@ -2202,7 +1363,7 @@
     <div class="cards-grid popular-style">
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/Superbowl-XLVIII_aca840.jpg" alt="Super Bowl &amp; Comic-Con" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#3a3a3c,#1c1c1e)><div class=card-placeholder-title>Super Bowl &amp; Comic-Con</div></div>'">
+          <img src="Supporting Assets/External/Superbowl-XLVIII_aca840.webp" alt="Super Bowl &amp; Comic-Con" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#3a3a3c,#1c1c1e)><div class=card-placeholder-title>Super Bowl &amp; Comic-Con</div></div>'">
           <span class="cat-pill cat-pill-navy">Cross-Media Promotion</span>
         </div>
         <div class="card-body">
@@ -2212,7 +1373,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/Apple-TV-7-Main-Menu_b277c0.jpg" alt="iTunes TV" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#444,#2a2a2a)><div class=card-placeholder-title>iTunes TV</div></div>'">
+          <img src="Supporting Assets/External/Apple-TV-7-Main-Menu_b277c0.webp" alt="iTunes TV" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#444,#2a2a2a)><div class=card-placeholder-title>iTunes TV</div></div>'">
           <span class="cat-pill cat-pill-navy">Content Partnerships</span>
         </div>
         <div class="card-body">
@@ -2222,7 +1383,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/itunes-12.4-header_c0f724.png" alt="iTunes Dance/Electronic" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#555,#333)><div class=card-placeholder-title>Dance/Electronic Genre</div></div>'">
+          <img src="Supporting Assets/External/itunes-12.4-header_c0f724.webp" alt="iTunes Dance/Electronic" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#555,#333)><div class=card-placeholder-title>Dance/Electronic Genre</div></div>'">
           <span class="cat-pill cat-pill-navy">Music Curation</span>
         </div>
         <div class="card-body">
@@ -2237,28 +1398,28 @@
         <img src="Supporting Assets/Logos/iTunes Network Logos/HBO.svg" alt="HBO" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
-        <img src="Supporting Assets/Logos/iTunes Network Logos/ESPN.png" alt="ESPN" style="max-width:65%; max-height:65%; object-fit:contain;">
+        <img src="Supporting Assets/Logos/iTunes Network Logos/ESPN.webp" alt="ESPN" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
         <img src="Supporting Assets/Logos/iTunes Network Logos/NFL.svg" alt="NFL" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
-        <img src="Supporting Assets/Logos/iTunes Network Logos/ABC.png" alt="ABC" style="max-width:65%; max-height:65%; object-fit:contain;">
+        <img src="Supporting Assets/Logos/iTunes Network Logos/ABC.webp" alt="ABC" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
-        <img src="Supporting Assets/Logos/iTunes Network Logos/Disney.png" alt="Disney" style="max-width:65%; max-height:65%; object-fit:contain;">
+        <img src="Supporting Assets/Logos/iTunes Network Logos/Disney.webp" alt="Disney" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
-        <img src="Supporting Assets/Logos/iTunes Network Logos/NBC.png" alt="NBC" style="max-width:65%; max-height:65%; object-fit:contain;">
+        <img src="Supporting Assets/Logos/iTunes Network Logos/NBC.webp" alt="NBC" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
         <img src="Supporting Assets/Logos/iTunes Network Logos/AMC.png" alt="AMC" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
-        <img src="Supporting Assets/Logos/iTunes Network Logos/Showtime.png" alt="Showtime" style="max-width:65%; max-height:65%; object-fit:contain;">
+        <img src="Supporting Assets/Logos/iTunes Network Logos/Showtime.webp" alt="Showtime" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
-        <img src="Supporting Assets/Logos/iTunes Network Logos/Bravo.png" alt="Bravo" style="max-width:65%; max-height:65%; object-fit:contain;">
+        <img src="Supporting Assets/Logos/iTunes Network Logos/Bravo.webp" alt="Bravo" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
         <img src="Supporting Assets/Logos/iTunes Network Logos/FOX.svg" alt="FOX" style="max-width:65%; max-height:65%; object-fit:contain;">
@@ -2267,7 +1428,7 @@
         <img src="Supporting Assets/Logos/iTunes Network Logos/CBS.svg" alt="CBS" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
       <div class="card-img-wrap" style="aspect-ratio:3/1; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:var(--radius);">
-        <img src="Supporting Assets/Logos/iTunes Network Logos/MLB.png" alt="MLB" style="max-width:65%; max-height:65%; object-fit:contain;">
+        <img src="Supporting Assets/Logos/iTunes Network Logos/MLB.webp" alt="MLB" style="max-width:65%; max-height:65%; object-fit:contain;">
       </div>
     </div>
 
@@ -2278,23 +1439,23 @@
         <div class="tv-cover-label">Breaking Bad</div>
       </div>
       <div class="tv-cover-cell">
-        <img src="Supporting Assets/External/tumblr_lrjmk4tvGo1ql5xjpo1_640_286bbc.jpg" alt="Glee" loading="lazy" onerror="this.style.display='none'">
+        <img src="Supporting Assets/External/tumblr_lrjmk4tvGo1ql5xjpo1_640_286bbc.webp" alt="Glee" loading="lazy" onerror="this.style.display='none'">
         <div class="tv-cover-label">Glee</div>
       </div>
       <div class="tv-cover-cell">
-        <img src="Supporting Assets/External/p7893509_b_v12_ai_3b7b4c.jpg" alt="The Office" loading="lazy" onerror="this.style.display='none'">
+        <img src="Supporting Assets/External/p7893509_b_v12_ai_3b7b4c.webp" alt="The Office" loading="lazy" onerror="this.style.display='none'">
         <div class="tv-cover-label">The Office</div>
       </div>
       <div class="tv-cover-cell">
-        <img src="Supporting Assets/External/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2Ez_5b1bbb.jpg" alt="Game of Thrones" loading="lazy" onerror="this.style.display='none'">
+        <img src="Supporting Assets/External/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2Ez_5b1bbb.webp" alt="Game of Thrones" loading="lazy" onerror="this.style.display='none'">
         <div class="tv-cover-label">Game of Thrones</div>
       </div>
       <div class="tv-cover-cell">
-        <img src="Supporting Assets/External/91YkpadK25L._AC_UF894,1000_QL80__bf7579.jpg" alt="Workaholics" loading="lazy" onerror="this.style.display='none'">
+        <img src="Supporting Assets/External/91YkpadK25L._AC_UF894,1000_QL80__bf7579.webp" alt="Workaholics" loading="lazy" onerror="this.style.display='none'">
         <div class="tv-cover-label">Workaholics</div>
       </div>
       <div class="tv-cover-cell">
-        <img src="Supporting Assets/External/MV5BYTNjNjc5OWQtYjMxNC00MzEwLWIxM2UtNjU3_38baa3.jpg" alt="Mad Men" loading="lazy" style="object-position:bottom;" onerror="this.style.display='none'">
+        <img src="Supporting Assets/External/MV5BYTNjNjc5OWQtYjMxNC00MzEwLWIxM2UtNjU3_38baa3.webp" alt="Mad Men" loading="lazy" style="object-position:bottom;" onerror="this.style.display='none'">
         <div class="tv-cover-label">Mad Men</div>
       </div>
     </div>
@@ -2308,7 +1469,7 @@
 
     <div class="edu-grid popular-edu">
       <div class="edu-card fade-up">
-        <img src="Supporting Assets/External/0x0_081967.jpg" alt="Harvard Business School" class="edu-card-img" loading="lazy" onerror="this.src='Portrait Photos/_Old Money.png'">
+        <img src="Supporting Assets/External/0x0_081967.webp" alt="Harvard Business School" class="edu-card-img" loading="lazy" onerror="this.src='Portrait Photos/_Old Money.webp'">
         <span class="cat-pill">2014 - 2016 · Cambridge, MA</span>
         <div class="edu-card-body">
           <div class="edu-school">Harvard Business School</div>
@@ -2321,7 +1482,7 @@
         </div>
       </div>
       <div class="edu-card fade-up">
-        <img src="Supporting Assets/External/Hoover-Tower-Stanford-University-Califor_ac089b.jpg" alt="Stanford University - Hoover Tower" class="edu-card-img" loading="lazy">
+        <img src="Supporting Assets/External/Hoover-Tower-Stanford-University-Califor_ac089b.webp" alt="Stanford University - Hoover Tower" class="edu-card-img" loading="lazy">
         <span class="cat-pill">2005 - 2009 · Palo Alto, CA</span>
         <div class="edu-card-body">
           <div class="edu-school">Stanford University</div>
@@ -2346,13 +1507,13 @@
           <div class="carousel" id="c-ss-chainsmokers">
             <div class="carousel-track-wrap ar-3-2">
               <div class="carousel-track">
-                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (7 of 24).jpg" alt="The Chainsmokers at Harvard Business School" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (8 of 24).jpg" alt="The Chainsmokers at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (9 of 24).jpg" alt="The Chainsmokers at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (10 of 24).jpg" alt="The Chainsmokers at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (15 of 24).jpg" alt="The Chainsmokers at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (17 of 24).jpg" alt="The Chainsmokers at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/IMG_2213.JPG" alt="Sound Society - The Chainsmokers group photo" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (7 of 24).webp" alt="The Chainsmokers at Harvard Business School" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (8 of 24).webp" alt="The Chainsmokers at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (9 of 24).webp" alt="The Chainsmokers at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (10 of 24).webp" alt="The Chainsmokers at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (15 of 24).webp" alt="The Chainsmokers at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/Harvard (17 of 24).webp" alt="The Chainsmokers at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Chainsmokers/IMG_2213.webp" alt="Sound Society - The Chainsmokers group photo" loading="lazy"></div>
               </div>
               <button class="carousel-btn prev" aria-label="Previous">‹</button>
               <button class="carousel-btn next" aria-label="Next">›</button>
@@ -2378,12 +1539,12 @@
           <div class="carousel" id="c-ss-alison">
             <div class="carousel-track-wrap ar-3-2">
               <div class="carousel-track">
-                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6241.jpg" alt="Alison Wonderland at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6252.jpg" alt="Alison Wonderland at Harvard" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6232.jpg" alt="Alison Wonderland at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6257.jpg" alt="Alison Wonderland at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6265.jpg" alt="Alison Wonderland at HBS" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6235.jpg" alt="Alison Wonderland at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6241.webp" alt="Alison Wonderland at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6252.webp" alt="Alison Wonderland at Harvard" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6232.webp" alt="Alison Wonderland at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6257.webp" alt="Alison Wonderland at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6265.webp" alt="Alison Wonderland at HBS" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Alison Wonderland/DONSLENS_AW_BUSTOUR10_QP8A6235.webp" alt="Alison Wonderland at HBS" loading="lazy"></div>
               </div>
               <button class="carousel-btn prev" aria-label="Previous">‹</button>
               <button class="carousel-btn next" aria-label="Next">›</button>
@@ -2408,11 +1569,11 @@
           <div class="carousel" id="c-ss-panel">
             <div class="carousel-track-wrap ar-3-2">
               <div class="carousel-track">
-                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/ZAK_1185.jpg" alt="Streaming vs. the Music Industry panel" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/ZAK_1052.jpg" alt="Industry panel" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/ZAK_1053.jpg" alt="Industry panel" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/ZAK_1169.jpg" alt="Industry panel" loading="lazy"></div>
-                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/IMG_4801.JPG" alt="Jeff moderating industry panel" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/ZAK_1185.webp" alt="Streaming vs. the Music Industry panel" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/ZAK_1052.webp" alt="Industry panel" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/ZAK_1053.webp" alt="Industry panel" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/ZAK_1169.webp" alt="Industry panel" loading="lazy"></div>
+                <div class="carousel-slide"><img src="Supporting Assets/Industry Panel/IMG_4801.webp" alt="Jeff moderating industry panel" loading="lazy"></div>
               </div>
               <button class="carousel-btn prev" aria-label="Previous">‹</button>
               <button class="carousel-btn next" aria-label="Next">›</button>
@@ -2453,7 +1614,7 @@
         <!-- NCAA -->
         <div class="ss-card">
           <div class="card-img-wrap" style="aspect-ratio:3/2;">
-            <img src="Supporting Assets/External/mens-pac10-singles-team-scaled_df1296.jpg" alt="PAC-10 Champions" loading="lazy" style="transform:scale(1.25);" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#4a0080)><div class=card-placeholder-title>PAC-10 Champions</div></div>'">
+            <img src="Supporting Assets/External/mens-pac10-singles-team-scaled_df1296.webp" alt="PAC-10 Champions" loading="lazy" style="transform:scale(1.25);" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a2e,#4a0080)><div class=card-placeholder-title>PAC-10 Champions</div></div>'">
           </div>
           <div class="ss-card-body">
             <div class="ss-card-title">PAC-10 Champions · NCAA Quarterfinals · #1 Team Ranking</div>
@@ -2464,7 +1625,7 @@
         <!-- Spirit of Stanford -->
         <div class="ss-card">
           <div class="card-img-wrap" style="aspect-ratio:3/2;">
-            <img src="Supporting Assets/Other/IMG_0252.jpg" alt="Spirit of Stanford Award" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#8C1515,#b5651d)><div class=card-placeholder-title>Spirit of Stanford</div></div>'">
+            <img src="Supporting Assets/Other/IMG_0252.webp" alt="Spirit of Stanford Award" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#8C1515,#b5651d)><div class=card-placeholder-title>Spirit of Stanford</div></div>'">
           </div>
           <div class="ss-card-body">
             <div class="ss-card-title">2009 Spirit of Stanford Award</div>
@@ -2484,7 +1645,7 @@
     <div class="cards-grid popular-style board-grid fade-up" style="grid-template-columns:repeat(4,1fr);">
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/twstc-logo1-1_03337a.png" alt="West Side Tennis Club" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a3560,#0d1f40)><div class=card-placeholder-title>West Side Tennis Club</div></div>'">
+          <img src="Supporting Assets/External/twstc-logo1-1_03337a.webp" alt="West Side Tennis Club" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a3560,#0d1f40)><div class=card-placeholder-title>West Side Tennis Club</div></div>'">
           <span class="cat-pill cat-pill-navy" style="top:auto; bottom:1rem;">2023 - Present</span>
         </div>
         <div class="card-body">
@@ -2494,7 +1655,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/hbs_alumni_yt.jpg" alt="Harvard Business School Alumni" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#8C1515,#5e0d0d)><div class=card-placeholder-title>HBS Alumni</div></div>'">
+          <img src="Supporting Assets/External/hbs_alumni_yt.webp" alt="Harvard Business School Alumni" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#8C1515,#5e0d0d)><div class=card-placeholder-title>HBS Alumni</div></div>'">
           <span class="cat-pill cat-pill-navy" style="top:auto; bottom:1rem;">2023 - Present</span>
         </div>
         <div class="card-body">
@@ -2504,7 +1665,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/stanford_alumni_logo.jpg" alt="Stanford Alumni Association" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#8C1515,#b5651d)><div class=card-placeholder-title>Stanford Alumni</div></div>'">
+          <img src="Supporting Assets/External/stanford_alumni_logo.webp" alt="Stanford Alumni Association" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#8C1515,#b5651d)><div class=card-placeholder-title>Stanford Alumni</div></div>'">
           <span class="cat-pill cat-pill-navy" style="top:auto; bottom:1rem;">2017 - Present</span>
         </div>
         <div class="card-body">
@@ -2514,7 +1675,7 @@
       </div>
       <div class="card fade-up">
         <div class="card-img-wrap">
-          <img src="Supporting Assets/External/stampede.png" alt="Stampede" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <img src="Supporting Assets/External/stampede.webp" alt="Stampede" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="card-placeholder" style="display:none;background:linear-gradient(135deg,#00594C,#003d34);">
             <div class="card-placeholder-title">Stampede</div>
           </div>
@@ -2530,14 +1691,14 @@
 </section>
 
 <!-- ── CONTACT ─────────────────────────────────────────────── -->
-<section id="contact" class="page-section page-section-alt">
+<section id="fun-facts" class="page-section page-section-alt">
   <div class="inner">
     <h2 class="exp-company fade-up">Fun Facts</h2>
     <div style="margin-bottom:2rem;"></div>
     <div class="fun-facts-grid popular-style">
           <div class="card">
             <div class="card-img-wrap">
-              <img src="Supporting Assets/Other/Family.jpg" alt="Twinning" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a3560,#2d5fa6)><div class=card-placeholder-title>👯</div></div>'">
+              <img src="Supporting Assets/Other/Family.webp" alt="Twinning" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a3560,#2d5fa6)><div class=card-placeholder-title>👯</div></div>'">
             </div>
             <div class="card-body">
               <h3 class="card-title">Twinning</h3>
@@ -2546,7 +1707,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="Supporting Assets/External/91OoRC7Q0lL._UF1000,1000_QL80__6d1511.jpg" alt="The Chainsmokers Collage EP" loading="lazy" onerror="this.src='Supporting Assets/Chainsmokers/Harvard (7 of 24).jpg'">
+              <img src="Supporting Assets/External/91OoRC7Q0lL._UF1000,1000_QL80__6d1511.jpg" alt="The Chainsmokers Collage EP" loading="lazy" onerror="this.src='Supporting Assets/Chainsmokers/Harvard (7 of 24).webp'">
             </div>
             <div class="card-body">
               <h3 class="card-title"><em>Collage</em> EP Cover Art</h3>
@@ -2555,7 +1716,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="Supporting Assets/External/image_b0fcef.jpg" alt="House of Blues Boston" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#3d2b00)><div class=card-placeholder-title>🎧</div></div>'" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <img src="Supporting Assets/External/image_b0fcef.webp" alt="House of Blues Boston" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#3d2b00)><div class=card-placeholder-title>🎧</div></div>'" style="width:100%;height:100%;object-fit:cover;display:block;">
             </div>
             <div class="card-body">
               <h3 class="card-title">DJed  House of Blues Boston</h3>
@@ -2565,7 +1726,7 @@
           <div class="card">
             <div class="card-img-wrap">
               <div class="card-video-wrap" style="aspect-ratio:1/1;">
-                <video src="Supporting Assets/Video/Mr. Marina 2014.mp4" poster="Supporting Assets/Video/Mr Marina 2014 thumbnail.jpeg" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
+                <video src="Supporting Assets/Video/Mr. Marina 2014.mp4" poster="Supporting Assets/Video/Mr Marina 2014 thumbnail.webp" preload="none" controls style="width:100%; height:100%; border:none; display:block; object-fit:cover;"></video>
               </div>
             </div>
             <div class="card-body">
@@ -2575,7 +1736,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="Supporting Assets/Other/Team Trophy.jpg" alt="4× Team State Champion" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#003087,#d4a017)><div class=card-placeholder-title>🏆</div></div>'">
+              <img src="Supporting Assets/Other/Team Trophy.webp" alt="4× Team State Champion" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#003087,#d4a017)><div class=card-placeholder-title>🏆</div></div>'">
             </div>
             <div class="card-body">
               <h3 class="card-title">4× Team State Champion</h3>
@@ -2584,7 +1745,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="Supporting Assets/External/denver-colorado-october-16-2004-the-colo_9c1425.jpg" alt="Colorado State Champion" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1c5c1c,#2e8b57)><div class=card-placeholder-title>🎾</div></div>'">
+              <img src="Supporting Assets/External/denver-colorado-october-16-2004-the-colo_9c1425.webp" alt="Colorado State Champion" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1c5c1c,#2e8b57)><div class=card-placeholder-title>🎾</div></div>'">
             </div>
             <div class="card-body">
               <h3 class="card-title">Colorado State Champion</h3>
@@ -2593,7 +1754,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="Supporting Assets/Other/Case Competiton.jpg" alt="NYC Interactive Entertainment Case Competition" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#8b1a1a,#c0392b)><div class=card-placeholder-title>🏆</div></div>'">
+              <img src="Supporting Assets/Other/Case Competiton.webp" alt="NYC Interactive Entertainment Case Competition" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#8b1a1a,#c0392b)><div class=card-placeholder-title>🏆</div></div>'">
             </div>
             <div class="card-body">
               <h3 class="card-title">Case Competition Winner</h3>
@@ -2602,7 +1763,7 @@
           </div>
           <div class="card">
             <div class="card-img-wrap">
-              <img src="Supporting Assets/Other/iphone.jpg" alt="Say Hello to iPhone" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#3a3a3a)><div class=card-placeholder-title>📱</div></div>'">
+              <img src="Supporting Assets/Other/iphone.webp" alt="Say Hello to iPhone" loading="lazy" onerror="this.parentNode.innerHTML='<div class=card-placeholder style=background:linear-gradient(135deg,#1a1a1a,#3a3a3a)><div class=card-placeholder-title>📱</div></div>'">
             </div>
             <div class="card-body">
               <h3 class="card-title">Say Hello to iPhone</h3>
@@ -2617,35 +1778,35 @@
 
       <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-top:2.5rem;" class="fade-up photo-placeholder-grid">
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative;">
-          <img src="Supporting Assets/Celeb Photos/Roger.jpg" alt="Roger Federer" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;object-position:center -60px;">
+          <img src="Supporting Assets/Celeb Photos/Roger.webp" alt="Roger Federer" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;object-position:center -60px;">
           <span class="cat-pill" style="top:auto;bottom:1rem;">Roger Federer</span>
         </div>
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative;">
-          <img src="Supporting Assets/Celeb Photos/Jannik.jpg" alt="Jannik Sinner" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="Supporting Assets/Celeb Photos/Jannik.webp" alt="Jannik Sinner" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
           <span class="cat-pill" style="top:auto;bottom:1rem;">Jannik Sinner</span>
         </div>
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative;">
-          <img src="Supporting Assets/Celeb Photos/Andre.jpg" alt="Andre Agassi" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="Supporting Assets/Celeb Photos/Andre.webp" alt="Andre Agassi" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
           <span class="cat-pill" style="top:auto;bottom:1rem;">Andre Agassi</span>
         </div>
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative;">
-          <img src="Supporting Assets/Celeb Photos/Steffi.jpg" alt="Steffi Graf" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.875) translateY(5%);transform-origin:center;">
+          <img src="Supporting Assets/Celeb Photos/Steffi.webp" alt="Steffi Graf" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.875) translateY(5%);transform-origin:center;">
           <span class="cat-pill" style="top:auto;bottom:1rem;">Steffi Graf</span>
         </div>
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative;">
-          <img src="Supporting Assets/Celeb Photos/Marcus.jpg" alt="Marcus Mumford" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="Supporting Assets/Celeb Photos/Marcus.webp" alt="Marcus Mumford" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
           <span class="cat-pill" style="top:auto;bottom:1rem;">Marcus Mumford</span>
         </div>
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative;">
-          <img src="Supporting Assets/Celeb Photos/Donald.jpg" alt="Donald Glover" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.98) translateY(20%);transform-origin:center;">
+          <img src="Supporting Assets/Celeb Photos/Donald.webp" alt="Donald Glover" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.98) translateY(20%);transform-origin:center;">
           <span class="cat-pill" style="top:auto;bottom:1rem;">Donald Glover</span>
         </div>
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative;">
-          <img src="Supporting Assets/Celeb Photos/Patrick.jpg" alt="Patrick McEnroe" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.1) translateX(-10%);transform-origin:center;">
+          <img src="Supporting Assets/Celeb Photos/Patrick.webp" alt="Patrick McEnroe" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.1) translateX(-10%);transform-origin:center;">
           <span class="cat-pill" style="top:auto;bottom:1rem;">Patrick McEnroe</span>
         </div>
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative;">
-          <img src="Supporting Assets/Celeb Photos/Bryan Bros.jpg" alt="Bryan Bros" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="Supporting Assets/Celeb Photos/Bryan Bros.webp" alt="Bryan Bros" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
           <span class="cat-pill" style="top:auto;bottom:1rem;">Bryan Bros</span>
         </div>
         <div style="aspect-ratio:3/2; border-radius:var(--radius); overflow:hidden; position:relative; background:linear-gradient(135deg,#e0e0e0,#c8c8c8); display:none;">
@@ -2695,97 +1856,6 @@
   <img id="lightboxImg" src="" alt="">
 </div>
 
-<script>
-  // ── Active nav link on scroll
-  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-  const navSections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-  const navObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(a => a.classList.remove('active'));
-        const active = document.querySelector('.nav-links a[href="#' + entry.target.id + '"]');
-        if (active) active.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-56px 0px -85% 0px' });
-  navSections.forEach(s => navObserver.observe(s));
-
-  // ── Scroll animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
-    });
-  }, { threshold: 0.06 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-  // ── Carousels
-  document.querySelectorAll('.carousel').forEach(carousel => {
-    const wrap = carousel.querySelector('.carousel-track-wrap');
-    const track = carousel.querySelector('.carousel-track');
-    if (!track) return;
-    const slides = Array.from(track.querySelectorAll(':scope > .carousel-slide'));
-    const dots = Array.from(carousel.querySelectorAll(':scope > .carousel-dots > .carousel-dot'));
-    const perPage = parseInt(carousel.dataset.perPage) || 1;
-    let cur = 0;
-
-    const maxIndex = Math.max(0, slides.length - perPage);
-    dots.forEach((d, i) => { if (i > maxIndex) d.style.display = 'none'; });
-    function go(n) {
-      cur = Math.min(Math.max(n, 0), maxIndex);
-      track.style.transform = 'translateX(-' + (cur * (100 / perPage)) + '%)';
-      dots.forEach((d, i) => d.classList.toggle('active', i === cur));
-    }
-
-    const prevBtn = carousel.querySelector(':scope > .carousel-track-wrap > .prev');
-    const nextBtn = carousel.querySelector(':scope > .carousel-track-wrap > .next');
-    prevBtn && prevBtn.addEventListener('click', e => { e.stopPropagation(); go(cur - 1); });
-    nextBtn && nextBtn.addEventListener('click', e => { e.stopPropagation(); go(cur + 1); });
-    dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
-
-    // Touch/swipe support
-    let startX = 0;
-    wrap && wrap.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-    wrap && wrap.addEventListener('touchend', e => {
-      const dx = e.changedTouches[0].clientX - startX;
-      if (Math.abs(dx) > 40) go(dx < 0 ? cur + 1 : cur - 1);
-    });
-  });
-
-  // ── Lightbox (portrait carousels + data-lightbox images - click to zoom)
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  document.querySelectorAll('.carousel-slide img, [data-lightbox]').forEach(img => {
-    img.style.cursor = 'zoom-in';
-    img.addEventListener('click', () => {
-      lightboxImg.src = img.src; lightboxImg.alt = img.alt;
-      lightbox.classList.add('open');
-    });
-  });
-  lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
-</script>
-<script>
-  function toggleGiphy() {
-    const img = document.getElementById('giphy-img');
-    const hint = document.getElementById('giphy-hint');
-    const existing = document.getElementById('giphy-freeze');
-    if (!existing) {
-      const canvas = document.createElement('canvas');
-      canvas.id = 'giphy-freeze';
-      const w = img.naturalWidth || img.offsetWidth;
-      const h = img.naturalHeight || img.offsetHeight;
-      canvas.width = w; canvas.height = h;
-      canvas.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;';
-      try {
-        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-        img.parentNode.appendChild(canvas);
-        hint.textContent = 'click to play';
-      } catch(e) { /* cross-origin canvas blocked */ }
-    } else {
-      existing.remove();
-      hint.textContent = 'click to pause';
-    }
-  }
-</script>
+<script src="main.js"></script>
 </body>
 </html>
